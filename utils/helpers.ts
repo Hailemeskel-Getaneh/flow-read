@@ -25,3 +25,26 @@ export function clamp(value: number, min: number, max: number): number {
   return Math.min(Math.max(value, min), max);
 }
 
+/**
+ * Extract the file name from a URI or path.
+ */
+export function getFilename(uri: string): string {
+  if (!uri) return 'Unknown file';
+  const parts = uri.split('/');
+  const last = parts[parts.length - 1];
+  // Decode URI encoding
+  try {
+    return decodeURIComponent(last);
+  } catch {
+    return last;
+  }
+}
+
+/**
+ * Truncate a string to a max length with ellipsis.
+ */
+export function truncate(str: string, maxLength: number): string {
+  if (!str || str.length <= maxLength) return str;
+  return str.slice(0, maxLength - 3) + '...';
+}
+
