@@ -48,3 +48,24 @@ export function truncate(str: string, maxLength: number): string {
   return str.slice(0, maxLength - 3) + '...';
 }
 
+/**
+ * Supported audio MIME types / extensions.
+ */
+export const AUDIO_MIME_TYPES = [
+  'audio/mpeg',
+  'audio/mp3',
+  'audio/mp4',
+  'audio/x-m4a',
+  'audio/aac',
+  'audio/wav',
+  'audio/x-wav',
+  'audio/ogg',
+  'audio/flac',
+  'audio/x-flac',
+  'audio/*',
+];
+
+/**
+ * Playback speed options.
+ */
+export const SPEED_OPTIONS = [0.75, 1.0, 1.25, 1.5, 2.0];
