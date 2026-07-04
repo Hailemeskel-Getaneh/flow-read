@@ -9,11 +9,21 @@ export default function RootLayout() {
       <StatusBar style="light" />
       <Stack
         screenOptions={{
-          headerShown: false,
+          headerStyle: { backgroundColor: '#0f0f1a' },
+          headerTintColor: '#e2e8f0',
+          headerTitleStyle: { fontWeight: '700' },
           contentStyle: { backgroundColor: '#0f0f1a' },
+          animation: 'fade',
         }}
       >
-        <Stack.Screen name="index" />
+        <Stack.Screen
+          name="index"
+          options={{ title: 'Study Reader', headerShown: false }}
+        />
+        <Stack.Screen
+          name="reader"
+          options={{ title: 'Study Reader', headerShown: false }}
+        />
       </Stack>
     </GestureHandlerRootView>
   );
