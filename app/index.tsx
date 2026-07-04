@@ -118,12 +118,137 @@ export default function HomeScreen() {
             >
               <LinearGradient
                 colors={['#6366f1', '#8b5cf6']}
-  return (
-    <SafeAreaView style={styles.container}>
-      <Animated.View style={[styles.content, { opacity: fadeAnim, transform: [{ translateY: slideAnim }, { scale: scaleAnim }] }]}>
-        <Text style={styles.title}>Study Reader</Text>
-      </Animated.View>
+                style={styles.ctaGradient}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+              >
+                <Ionicons name="arrow-forward" size={20} color="#fff" />
+                <Text style={styles.ctaText}>Open Study Reader</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+            <Text style={styles.ctaHint}>Select a PDF and audio file to get started</Text>
+          </View>
+        </Animated.View>
+      </View>
     </SafeAreaView>
   );
 }
-const styles = StyleSheet.create({ container: { flex: 1, backgroundColor: '#0f0f1a' }, content: { flex: 1, padding: 24 } });
+
+interface FeatureCardProps {
+  icon: keyof typeof Ionicons.glyphMap;
+  title: string;
+  description: string;
+  color: string;
+}
+
+function FeatureCard({ icon, title, description, color }: FeatureCardProps) {
+  return (
+    <View style={styles.featureCard}>
+      <View style={[styles.featureIcon, { backgroundColor: color + '22' }]}>
+        <Ionicons name={icon} size={24} color={color} />
+      </View>
+      <View style={styles.featureText}>
+        <Text style={styles.featureTitle}>{title}</Text>
+        <Text style={styles.featureDesc}>{description}</Text>
+      </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#0f0f1a',
+  },
+  background: {
+    flex: 1,
+    overflow: 'hidden',
+  },
+  content: {
+    flex: 1,
+    paddingHorizontal: 24,
+  },
+  orb: {
+    position: 'absolute',
+    borderRadius: 999,
+    opacity: 0.15,
+  },
+  orb1: {
+    width: 300,
+    height: 300,
+    backgroundColor: '#6366f1',
+    top: -100,
+    right: -100,
+  },
+  orb2: {
+    width: 220,
+    height: 220,
+    backgroundColor: '#8b5cf6',
+    bottom: 80,
+    left: -80,
+  },
+  orb3: {
+    width: 160,
+    height: 160,
+    backgroundColor: '#a78bfa',
+    top: height * 0.38,
+    right: -40,
+  },
+  header: {
+    alignItems: 'center',
+    paddingTop: Platform.OS === 'android' ? 60 : 40,
+    paddingBottom: 32,
+  },
+  logoContainer: {
+    marginBottom: 16,
+  },
+  logoIcon: {
+    width: 76,
+    height: 76,
+    borderRadius: 22,
+    borderWidth: 1,
+    borderColor: '#6366f140',
+    justifyContent: 'center',
+    alignItems: 'center',
+    shadowColor: '#6366f1',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.4,
+    shadowRadius: 16,
+    elevation: 10,
+  },
+  appName: {
+    fontSize: 34,
+    fontWeight: '800',
+    color: '#f1f5f9',
+    letterSpacing: -1,
+    marginBottom: 8,
+  },
+  tagline: {
+    fontSize: 15,
+    color: '#94a3b8',
+    fontWeight: '400',
+    letterSpacing: 0.3,
+    shadowOpacity: 0.5,
+    shadowRadius: 20,
+    elevation: 10,
+  },
+  ctaGradient: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+    paddingVertical: 18,
+    borderRadius: 16,
+  },
+  ctaText: {
+    color: '#fff',
+    fontSize: 17,
+    fontWeight: '700',
+    letterSpacing: 0.3,
+  },
+  ctaHint: {
+    fontSize: 13,
+    color: '#475569',
+    textAlign: 'center',
+  },
+});
