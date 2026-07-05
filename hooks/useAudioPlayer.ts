@@ -198,5 +198,25 @@ export function useAudioPlayer(): AudioState & AudioControls {
     [safeSetState],
   );
 
-  return { ...state, loadAudio, unload, play, pause, seekTo } as any;
+  const skipBackward = useCallback(
+    async (seconds: number = 15) => {
+      const newPosition = Math.max(0, state.positionMs - seconds * 1000);
+      await seekTo(newPosition);
+    },
+    [seekTo, state.positionMs],
+  );
+
+  const skipForward = useCallback(
+    async (seconds: number = 15) => {
+      const newPosition = Math.min(
+        state.durationMs,
+        state.positionMs + seconds * 1000,
+      );
+      await seekTo(newPosition);
+    },
+    [seekTo, state.positionMs, state.durationMs],
+  );
+
+  const setRate = useCallback(
+  return { ...state, loadAudio, unload, play, pause, seekTo, skipBackward, skipForward } as any;
 }
