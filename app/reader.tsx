@@ -228,6 +228,66 @@ const styles = StyleSheet.create({
   },
   topBarCenter: {
     flex: 1,
+  },
+  topBarTitle: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#cbd5e1',
+  },
+  openBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: '#6366f1',
+    borderRadius: 10,
+    paddingHorizontal: 12,
+    paddingVertical: 7,
+  },
+  openBtnText: {
+    color: '#fff',
+    fontSize: 14,
+    fontWeight: '600',
+  },
+  pdfArea: {
+    flex: 1,
+  },
+  // Modal
+  modalBackdrop: {
+    flex: 1,
+    backgroundColor: '#00000088',
+    justifyContent: 'flex-end',
+  },
+  modalCard: {
+    backgroundColor: '#1a1a2e',
+    borderTopLeftRadius: 24,
+    borderTopRightRadius: 24,
+    padding: 24,
+    paddingBottom: Platform.OS === 'android' ? 36 : 28,
+    borderTopWidth: 1,
+    borderColor: '#ffffff10',
+  },
+  modalHandle: {
+    width: 40,
+    height: 4,
+    backgroundColor: '#334155',
+    borderRadius: 2,
+    alignSelf: 'center',
+    marginBottom: 20,
+  },
+  modalTitle: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#f1f5f9',
+    marginBottom: 4,
+  },
+  modalSubtitle: {
+    fontSize: 14,
+    color: '#475569',
+    marginBottom: 20,
+  },
+  modalOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
     backgroundColor: '#12122280',
     borderRadius: 14,
     padding: 16,
