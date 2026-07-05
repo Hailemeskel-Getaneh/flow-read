@@ -48,6 +48,76 @@ export default function FloatingAudioPlayer({
   const getSeekPositionFromEvent = useCallback(
     (e: GestureResponderEvent) => {
       const x = e.nativeEvent.locationX;
-  return <View style={styles.container}><Text>Player</Text></View>;
+      const ratio = Math.min(Math.max(x / seekBarWidth, 0), 1);
+      return ratio * audio.durationMs;
+    },
+    [seekBarWidth, audio.durationMs],
+  );
+
+  // PanResponder for seek bar
+  const seekPanResponder = PanResponder.create({
+    onStartShouldSetPanResponder: () => audio.isLoaded,
+    onMoveShouldSetPanResponder: () => audio.isLoaded,
+    onPanResponderGrant: (e) => {
+      setIsSeeking(true);
+      setSeekPosition(getSeekPositionFromEvent(e));
+    },
+    onPanResponderMove: (e) => {
+      setSeekPosition(getSeekPositionFromEvent(e));
+    },
+    onPanResponderRelease: async (e) => {
+      const pos = getSeekPositionFromEvent(e);
+      setIsSeeking(false);
+      await audio.seekTo(pos);
+    },
+    onPanResponderTerminate: () => {
+      setIsSeeking(false);
+    },
+  });
+
+  const togglePlayPause = async () => {
+    if (audio.isPlaying) {
+      await audio.pause();
+    } else {
+      await audio.play();
+    }
+  };
+
+  const handleSpeedSelect = async (rate: number) => {
+    await audio.setRate(rate);
+    setShowSpeedMenu(false);
+  };
+
+  const handleSleepTimer = (minutes: number | null) => {
+    audio.setSleepTimer(minutes);
+    setShowSleepModal(false);
+  };
+
+  const sleepTimerActive = audio.sleepTimerMs !== null;
+
+  // Format sleep timer countdown
+  const sleepTimerDisplay = audio.sleepTimerMs
+    ? formatTime(audio.sleepTimerMs)
+    : null;
+
+  // ----------- Minimized view -----------
+  if (isMinimized) {
+    return (
+      <View style={styles.minimizedContainer}>
+        <TouchableOpacity
+          style={styles.minimizedContent}
+          onPress={() => setIsMinimized(false)}
+          activeOpacity={0.9}
+        >
+          <View style={styles.minimizedLeft}>
+            <Ionicons name="musical-notes" size={14} color="#a78bfa" />
+            <Text style={styles.minimizedText} numberOfLines={1}>
+              {audio.filename
+                ? truncate(audio.filename, 22)
+                : 'No audio'}
+            </Text>
+            {sleepTimerActive && sleepTimerDisplay && (
+              <View style={styles.sleepBadge}>
+  return <View style={styles.container}><View style={styles.seekRow} /></View>;
 }
-const styles = StyleSheet.create({ container: { padding: 16 } });
+const styles = StyleSheet.create({ container: { padding: 16 }, seekRow: { height: 20 } });
