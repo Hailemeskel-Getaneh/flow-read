@@ -113,6 +113,160 @@ export default function ReaderScreen() {
         >
           <Ionicons name="add" size={20} color="#fff" />
           <Text style={styles.openBtnText}>Open</Text>
-  return <SafeAreaView style={styles.container}><Text>Picker ready</Text></SafeAreaView>;
+        </TouchableOpacity>
+      </View>
+
+      {/* ---- Floating Audio Player ---- */}
+      <FloatingAudioPlayer audio={audio} onPickAudio={pickAudio} />
+
+      {/* ---- PDF Viewer (takes all remaining space) ---- */}
+      <View style={styles.pdfArea}>
+        <PdfViewer uri={pdfUri} onPickPdf={pickPdf} />
+      </View>
+
+      {/* ---- File picker modal ---- */}
+      <Modal
+        visible={showPickerModal}
+        transparent
+        animationType="slide"
+        onRequestClose={() => setShowPickerModal(false)}
+      >
+        <Pressable
+          style={styles.modalBackdrop}
+          onPress={() => setShowPickerModal(false)}
+        >
+          <Pressable style={styles.modalCard} onPress={() => {}}>
+            <View style={styles.modalHandle} />
+            <Text style={styles.modalTitle}>Open a file</Text>
+            <Text style={styles.modalSubtitle}>
+              Choose what you want to open
+            </Text>
+
+            <TouchableOpacity
+              style={styles.modalOption}
+              onPress={handleModalPdf}
+              activeOpacity={0.85}
+            >
+              <View style={[styles.modalOptionIcon, { backgroundColor: '#6366f122' }]}>
+                <Ionicons name="document-text" size={24} color="#6366f1" />
+              </View>
+              <View style={styles.modalOptionText}>
+                <Text style={styles.modalOptionTitle}>PDF Document</Text>
+                <Text style={styles.modalOptionDesc}>
+                  Open a PDF file to read
+                </Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color="#475569" />
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.modalOption}
+              onPress={handleModalAudio}
+              activeOpacity={0.85}
+            >
+              <View style={[styles.modalOptionIcon, { backgroundColor: '#8b5cf622' }]}>
+                <Ionicons name="musical-notes" size={24} color="#8b5cf6" />
+              </View>
+              <View style={styles.modalOptionText}>
+                <Text style={styles.modalOptionTitle}>Audio File</Text>
+                <Text style={styles.modalOptionDesc}>
+                  Open an audio file to listen to
+                </Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color="#475569" />
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[styles.modalOption, styles.modalOptionHighlight]}
+              onPress={handleModalBoth}
+              activeOpacity={0.85}
+            >
+              <View style={[styles.modalOptionIcon, { backgroundColor: '#a78bfa22' }]}>
+                <Ionicons name="layers" size={24} color="#a78bfa" />
+              </View>
+              <View style={styles.modalOptionText}>
+                <Text style={styles.modalOptionTitle}>Open Both</Text>
+                <Text style={styles.modalOptionDesc}>
+                  Select PDF then audio in one go
+                </Text>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color="#475569" />
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.modalCancel}
+              onPress={() => setShowPickerModal(false)}
+            >
+              <Text style={styles.modalCancelText}>Cancel</Text>
+            </TouchableOpacity>
+          </Pressable>
+        </Pressable>
+      </Modal>
+    </SafeAreaView>
+  );
 }
-const styles = StyleSheet.create({ container: { flex: 1, backgroundColor: '#0f0f1a' } });
+
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#0f0f1a',
+    paddingTop: Platform.OS === 'android' ? 36 : 0,
+  },
+  topBar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#ffffff0a',
+    backgroundColor: '#0f0f1a',
+    gap: 8,
+  },
+  backBtn: {
+    padding: 6,
+    borderRadius: 10,
+  },
+  topBarCenter: {
+    flex: 1,
+    backgroundColor: '#12122280',
+    borderRadius: 14,
+    padding: 16,
+    marginBottom: 10,
+    gap: 14,
+    borderWidth: 1,
+    borderColor: '#ffffff08',
+  },
+  modalOptionHighlight: {
+    borderColor: '#a78bfa20',
+  },
+  modalOptionIcon: {
+    width: 48,
+    height: 48,
+    borderRadius: 12,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalOptionText: {
+    flex: 1,
+  },
+  modalOptionTitle: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#e2e8f0',
+    marginBottom: 2,
+  },
+  modalOptionDesc: {
+    fontSize: 12,
+    color: '#64748b',
+  },
+  modalCancel: {
+    marginTop: 8,
+    alignItems: 'center',
+    padding: 14,
+  },
+  modalCancelText: {
+    color: '#64748b',
+    fontSize: 15,
+    fontWeight: '500',
+  },
+});
