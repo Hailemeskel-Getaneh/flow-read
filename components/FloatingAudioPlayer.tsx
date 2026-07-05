@@ -228,6 +228,96 @@ export default function FloatingAudioPlayer({
         onLayout={onSeekBarLayout}
         {...seekPanResponder.panHandlers}
       >
+        <View style={styles.seekBarTrack}>
+          <View
+            style={[
+              styles.seekBarFill,
+              { width: `${Math.min(displayProgress * 100, 100)}%` as any },
+            ]}
+          />
+          <View
+            style={[
+              styles.seekBarThumb,
+              {
+                left: `${Math.min(displayProgress * 100, 100)}%` as any,
+              },
+            ]}
+          />
+        </View>
+      </View>
+
+      {/* Time row */}
+      <View style={styles.timeRow}>
+        <Text style={styles.timeText}>{formatTime(displayPosition)}</Text>
+        <Text style={styles.timeText}>{formatTime(audio.durationMs)}</Text>
+      </View>
+
+      {/* Controls row */}
+      <View style={styles.controlsRow}>
+        {/* Speed button */}
+        <View style={styles.speedContainer}>
+          <TouchableOpacity
+            style={styles.speedBtn}
+            onPress={() => setShowSpeedMenu(!showSpeedMenu)}
+          >
+            <Text style={styles.speedBtnText}>{audio.rate}x</Text>
+          </TouchableOpacity>
+
+          {showSpeedMenu && (
+            <View style={styles.speedMenu}>
+              {SPEED_OPTIONS.map((rate) => (
+                <TouchableOpacity
+                  key={rate}
+                  style={[
+                    styles.speedOption,
+                    audio.rate === rate && styles.speedOptionActive,
+                  ]}
+                  onPress={() => handleSpeedSelect(rate)}
+                >
+                  <Text
+                    style={[
+                      styles.speedOptionText,
+                      audio.rate === rate && styles.speedOptionTextActive,
+                    ]}
+                  >
+                    {rate}x
+                  </Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          )}
+        </View>
+
+        {/* Skip back */}
+        <TouchableOpacity
+          style={[styles.controlBtn, !audio.isLoaded && styles.controlBtnDisabled]}
+          onPress={() => audio.skipBackward(15)}
+          disabled={!audio.isLoaded}
+        >
+          <Ionicons name="play-back" size={22} color={audio.isLoaded ? '#cbd5e1' : '#334155'} />
+          <Text style={[styles.skipLabel, !audio.isLoaded && styles.skipLabelDisabled]}>15</Text>
+        </TouchableOpacity>
+
+        {/* Play/Pause */}
+        <TouchableOpacity
+          style={[styles.playBtn, !audio.isLoaded && styles.playBtnDisabled]}
+          onPress={togglePlayPause}
+          disabled={!audio.isLoaded}
+          activeOpacity={0.8}
+        >
+          {!audio.isLoaded && audio.filename ? (
+            <ActivityIndicator size="small" color="#fff" />
+          ) : (
+            <Ionicons
+              name={audio.isPlaying ? 'pause' : 'play'}
+              size={26}
+              color="#fff"
+            />
+          )}
+        </TouchableOpacity>
+
+        {/* Skip forward */}
+        <TouchableOpacity
   return <View style={styles.container} />;
 }
 const styles = StyleSheet.create({ container: { padding: 16 } });
