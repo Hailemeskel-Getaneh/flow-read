@@ -78,5 +78,70 @@ export function useAudioPlayer(): AudioState & AudioControls {
         soundRef.current.unloadAsync().catch(() => {});
         soundRef.current = null;
       }
-  return { ...state } as any;
+    };
+  }, []);
+
+  const onPlaybackStatusUpdate = useCallback(
+    (status: any) => {
+      if (!status.isLoaded) {
+        if (status.error) {
+          safeSetState((prev) => ({
+            ...prev,
+            error: `Playback error: ${status.error}`,
+            isPlaying: false,
+          }));
+        }
+        return;
+      }
+
+      safeSetState((prev) => ({
+        ...prev,
+        isLoaded: true,
+        isPlaying: status.isPlaying,
+        positionMs: status.positionMillis ?? 0,
+        durationMs: status.durationMillis ?? 0,
+        rate: status.rate ?? 1.0,
+        error: null,
+      }));
+
+      // Auto-reset when playback finishes
+      if (status.didJustFinish) {
+        safeSetState((prev) => ({ ...prev, isPlaying: false, positionMs: 0 }));
+        // Cancel sleep timer on finish
+        if (sleepTimerRef.current) {
+          clearInterval(sleepTimerRef.current);
+          sleepTimerRef.current = null;
+          safeSetState((prev) => ({ ...prev, sleepTimerMs: null }));
+        }
+      }
+    },
+    [safeSetState],
+  );
+
+  const loadAudio = useCallback(
+    async (uri: string, filename: string) => {
+      safeSetState((prev) => ({
+        ...prev,
+        error: null,
+        isLoaded: false,
+        filename,
+      }));
+
+      try {
+        // Unload previous sound
+        if (soundRef.current) {
+          await soundRef.current.unloadAsync();
+          soundRef.current = null;
+        }
+
+        const { sound } = await Audio.Sound.createAsync(
+          { uri },
+          {
+            shouldPlay: false,
+            rate: state.rate,
+            isMuted: false,
+            volume: 1.0,
+            isLooping: false,
+          },
+  return { ...state, loadAudio, unload } as any;
 }
