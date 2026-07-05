@@ -118,6 +118,116 @@ export default function FloatingAudioPlayer({
             </Text>
             {sleepTimerActive && sleepTimerDisplay && (
               <View style={styles.sleepBadge}>
-  return <View style={styles.container}><View style={styles.seekRow} /></View>;
+                <Ionicons name="moon" size={10} color="#ec4899" />
+                <Text style={styles.sleepBadgeText}>{sleepTimerDisplay}</Text>
+              </View>
+            )}
+          </View>
+          <View style={styles.minimizedRight}>
+            {audio.isLoaded && (
+              <TouchableOpacity
+                onPress={togglePlayPause}
+                hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+              >
+                <Ionicons
+                  name={audio.isPlaying ? 'pause' : 'play'}
+                  size={18}
+                  color="#e2e8f0"
+                />
+              </TouchableOpacity>
+            )}
+            <Ionicons name="chevron-up" size={16} color="#64748b" />
+          </View>
+        </TouchableOpacity>
+
+        {/* Mini progress bar */}
+        {audio.isLoaded && (
+          <View style={styles.miniProgressBar}>
+            <View
+              style={[
+                styles.miniProgressFill,
+                { width: `${Math.min(progress * 100, 100)}%` as any },
+              ]}
+            />
+          </View>
+        )}
+      </View>
+    );
+  }
+
+  // ----------- Full player -----------
+  return (
+    <View style={styles.container}>
+      {/* Header row */}
+      <View style={styles.headerRow}>
+        <View style={styles.fileInfo}>
+          <View style={styles.audioIcon}>
+            <Ionicons name="musical-notes" size={14} color="#a78bfa" />
+          </View>
+          <Text style={styles.filename} numberOfLines={1}>
+            {audio.filename ? truncate(audio.filename, 26) : 'No audio selected'}
+          </Text>
+        </View>
+        <View style={styles.headerActions}>
+          {/* Sleep timer button */}
+          <TouchableOpacity
+            style={[styles.headerBtn, sleepTimerActive && styles.headerBtnActive]}
+            onPress={() => setShowSleepModal(true)}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          >
+            <Ionicons
+              name="moon"
+              size={16}
+              color={sleepTimerActive ? '#ec4899' : '#94a3b8'}
+            />
+          </TouchableOpacity>
+
+          <TouchableOpacity
+            style={styles.headerBtn}
+            onPress={onPickAudio}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          >
+            <Ionicons name="folder-open-outline" size={18} color="#94a3b8" />
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.headerBtn}
+            onPress={() => setIsMinimized(true)}
+            hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+          >
+            <Ionicons name="chevron-down" size={18} color="#94a3b8" />
+          </TouchableOpacity>
+        </View>
+      </View>
+
+      {/* Sleep timer countdown */}
+      {sleepTimerActive && sleepTimerDisplay && (
+        <View style={styles.sleepTimerRow}>
+          <Ionicons name="moon" size={12} color="#ec4899" />
+          <Text style={styles.sleepTimerText}>
+            Auto-pause in {sleepTimerDisplay}
+          </Text>
+          <TouchableOpacity
+            onPress={() => handleSleepTimer(null)}
+            hitSlop={{ top: 4, bottom: 4, left: 4, right: 4 }}
+          >
+            <Ionicons name="close-circle" size={14} color="#64748b" />
+          </TouchableOpacity>
+        </View>
+      )}
+
+      {/* Error message */}
+      {audio.error && (
+        <Text style={styles.errorText} numberOfLines={2}>
+          ⚠ {audio.error}
+        </Text>
+      )}
+
+      {/* Seek bar */}
+      <View
+        style={styles.seekBarContainer}
+        onLayout={onSeekBarLayout}
+        {...seekPanResponder.panHandlers}
+      >
+  return <View style={styles.container} />;
 }
-const styles = StyleSheet.create({ container: { padding: 16 }, seekRow: { height: 20 } });
+const styles = StyleSheet.create({ container: { padding: 16 } });
