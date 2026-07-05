@@ -35,6 +35,48 @@ const INITIAL_STATE: AudioState = {
   sleepTimerMs: null,
 };
 
-export function useAudioPlayer() {
-  return INITIAL_STATE;
+export function useAudioPlayer(): AudioState & AudioControls {
+  const [state, setState] = useState<AudioState>(INITIAL_STATE);
+  const soundRef = useRef<Audio.Sound | null>(null);
+  const isUnmountedRef = useRef(false);
+  const sleepTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Safe state updater (won't update after unmount)
+  const safeSetState = useCallback((updater: (prev: AudioState) => AudioState) => {
+    if (!isUnmountedRef.current) {
+      setState(updater);
+    }
+  }, []);
+
+  useEffect(() => {
+    // Configure audio mode on mount
+    const configureAudio = async () => {
+      try {
+        await Audio.setAudioModeAsync({
+          allowsRecordingIOS: false,
+          staysActiveInBackground: true,
+          playsInSilentModeIOS: true,
+          shouldDuckAndroid: false,
+          playThroughEarpieceAndroid: false,
+        });
+      } catch (err) {
+        console.warn('[useAudioPlayer] Could not set audio mode:', err);
+      }
+    };
+
+    configureAudio();
+
+    return () => {
+      isUnmountedRef.current = true;
+      // Clear sleep timer
+      if (sleepTimerRef.current) {
+        clearInterval(sleepTimerRef.current);
+        sleepTimerRef.current = null;
+      }
+      // Cleanup sound on unmount
+      if (soundRef.current) {
+        soundRef.current.unloadAsync().catch(() => {});
+        soundRef.current = null;
+      }
+  return { ...state } as any;
 }
