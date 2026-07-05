@@ -218,5 +218,25 @@ export function useAudioPlayer(): AudioState & AudioControls {
   );
 
   const setRate = useCallback(
-  return { ...state, loadAudio, unload, play, pause, seekTo, skipBackward, skipForward } as any;
+    async (rate: number) => {
+      if (!soundRef.current) {
+        safeSetState((prev) => ({ ...prev, rate }));
+        return;
+      }
+      try {
+        // shouldCorrectPitch keeps pitch stable at different rates
+        await soundRef.current.setRateAsync(rate, true);
+        safeSetState((prev) => ({ ...prev, rate }));
+      } catch (err: any) {
+        safeSetState((prev) => ({
+          ...prev,
+          error: err?.message ?? 'Failed to change playback rate',
+        }));
+      }
+    },
+    [safeSetState],
+  );
+
+  const setSleepTimer = useCallback(
+  return { ...state, loadAudio, unload, play, pause, seekTo, skipBackward, skipForward, setRate } as any;
 }
