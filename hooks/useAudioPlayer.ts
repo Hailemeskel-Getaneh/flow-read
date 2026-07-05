@@ -143,5 +143,60 @@ export function useAudioPlayer(): AudioState & AudioControls {
             volume: 1.0,
             isLooping: false,
           },
-  return { ...state, loadAudio, unload } as any;
+          onPlaybackStatusUpdate,
+        );
+
+        soundRef.current = sound;
+        safeSetState((prev) => ({ ...prev, isLoaded: true, filename }));
+      } catch (err: any) {
+        safeSetState((prev) => ({
+          ...prev,
+          error: err?.message ?? 'Failed to load audio file',
+          isLoaded: false,
+        }));
+      }
+    },
+    [onPlaybackStatusUpdate, safeSetState, state.rate],
+  );
+
+  const play = useCallback(async () => {
+    if (!soundRef.current) return;
+    try {
+      await soundRef.current.playAsync();
+    } catch (err: any) {
+      safeSetState((prev) => ({
+        ...prev,
+        error: err?.message ?? 'Failed to play audio',
+      }));
+    }
+  }, [safeSetState]);
+
+  const pause = useCallback(async () => {
+    if (!soundRef.current) return;
+    try {
+      await soundRef.current.pauseAsync();
+    } catch (err: any) {
+      safeSetState((prev) => ({
+        ...prev,
+        error: err?.message ?? 'Failed to pause audio',
+      }));
+    }
+  }, [safeSetState]);
+
+  const seekTo = useCallback(
+    async (positionMs: number) => {
+      if (!soundRef.current) return;
+      try {
+        await soundRef.current.setPositionAsync(positionMs);
+      } catch (err: any) {
+        safeSetState((prev) => ({
+          ...prev,
+          error: err?.message ?? 'Failed to seek',
+        }));
+      }
+    },
+    [safeSetState],
+  );
+
+  return { ...state, loadAudio, unload, play, pause, seekTo } as any;
 }
