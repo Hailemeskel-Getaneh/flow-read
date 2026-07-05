@@ -108,6 +108,96 @@ export default function PdfViewer({ uri, onPickPdf, onPageChange }: PdfViewerPro
       </View>
     );
   }
-  return <View style={styles.container}><ActivityIndicator /></View>;
+
+  // ---- Error state ----
+  if (error) {
+    return (
+      <View style={styles.emptyContainer}>
+        <View style={[styles.emptyIconBox, styles.errorIconBox]}>
+          <Ionicons name="alert-circle-outline" size={56} color="#f87171" />
+        </View>
+        <Text style={[styles.emptyTitle, styles.errorTitle]}>Failed to load PDF</Text>
+        <Text style={styles.errorMessage}>{error}</Text>
+        <TouchableOpacity style={styles.pickBtn} onPress={onPickPdf} activeOpacity={0.85}>
+          <Ionicons name="folder-open-outline" size={20} color="#fff" />
+          <Text style={styles.pickBtnText}>Select Another PDF</Text>
+        </TouchableOpacity>
+      </View>
+    );
+  }
+
+  return (
+    <View style={styles.container}>
+      {/* PDF renderer */}
+      <Animated.View style={[styles.pdfWrapper, { opacity: fadeAnim }]}>
+        <Pdf
+          ref={pdfRef}
+          key={uri} // remount when URI changes
+          source={{ uri, cache: true }}
+          style={styles.pdf}
+          enablePaging={false}
+          horizontal={false}
+          fitPolicy={0} // fit width
+          trustAllCerts={false}
+          onLoadComplete={handleLoadComplete}
+          onPageChanged={handlePageChanged}
+          onError={handleError}
+          onPressLink={handlePressLink}
+          renderActivityIndicator={() => (
+            <View style={styles.loadingOverlay}>
+              <ActivityIndicator size="large" color="#6366f1" />
+              <Text style={styles.loadingText}>Loading PDF…</Text>
+            </View>
+          )}
+        />
+      </Animated.View>
+
+      {/* Loading overlay (while fading in) */}
+      {isLoading && (
+        <View style={styles.loadingOverlay}>
+          <ActivityIndicator size="large" color="#6366f1" />
+          <Text style={styles.loadingText}>Loading PDF…</Text>
+        </View>
+      )}
+
+      {/* Page indicator — tap to jump */}
+      {totalPages > 0 && (
+        <TouchableOpacity
+          style={styles.pageIndicator}
+          onPress={() => {
+            setJumpInput(String(currentPage));
+            setShowPageJump(true);
+          }}
+          activeOpacity={0.8}
+        >
+          <Ionicons name="book-outline" size={11} color="#64748b" style={{ marginRight: 4 }} />
+          <Text style={styles.pageIndicatorText}>
+            {currentPage} / {totalPages}
+          </Text>
+        </TouchableOpacity>
+      )}
+
+      {/* Change PDF FAB */}
+      <TouchableOpacity
+        style={styles.changePdfBtn}
+        onPress={onPickPdf}
+        activeOpacity={0.85}
+      >
+        <Ionicons name="document-text-outline" size={16} color="#a78bfa" />
+        <Text style={styles.changePdfText}>Change PDF</Text>
+      </TouchableOpacity>
+
+      {/* Page jump overlay */}
+      {showPageJump && (
+        <KeyboardAvoidingView
+          style={styles.jumpOverlay}
+          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        >
+          <TouchableOpacity
+            style={styles.jumpBackdrop}
+            activeOpacity={1}
+            onPress={() => {
+              setShowPageJump(false);
+  return <View style={styles.container} />;
 }
 const styles = StyleSheet.create({ container: { flex: 1 } });
