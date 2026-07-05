@@ -198,6 +198,172 @@ export default function PdfViewer({ uri, onPickPdf, onPageChange }: PdfViewerPro
             activeOpacity={1}
             onPress={() => {
               setShowPageJump(false);
-  return <View style={styles.container} />;
+              setJumpInput('');
+            }}
+          />
+          <View style={styles.jumpCard}>
+            <Text style={styles.jumpTitle}>Go to page</Text>
+            <Text style={styles.jumpSubtitle}>Enter a page number (1 – {totalPages})</Text>
+            <TextInput
+              style={styles.jumpInput}
+              value={jumpInput}
+              onChangeText={setJumpInput}
+              keyboardType="number-pad"
+              placeholder={String(currentPage)}
+              placeholderTextColor="#334155"
+              autoFocus
+              onSubmitEditing={handleJumpToPage}
+              returnKeyType="go"
+              maxLength={6}
+            />
+            <View style={styles.jumpActions}>
+              <TouchableOpacity
+                style={styles.jumpCancelBtn}
+                onPress={() => {
+                  setShowPageJump(false);
+                  setJumpInput('');
+                }}
+              >
+                <Text style={styles.jumpCancelText}>Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.jumpGoBtn}
+                onPress={handleJumpToPage}
+                activeOpacity={0.85}
+              >
+                <Text style={styles.jumpGoText}>Go</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </KeyboardAvoidingView>
+      )}
+    </View>
+  );
 }
-const styles = StyleSheet.create({ container: { flex: 1 } });
+
+// Small helper tip row for empty state
+function TipRow({ icon, text }: { icon: keyof typeof Ionicons.glyphMap; text: string }) {
+  return (
+    <View style={styles.tipRow}>
+      <View style={styles.tipIcon}>
+        <Ionicons name={icon} size={13} color="#6366f1" />
+      </View>
+      <Text style={styles.tipText}>{text}</Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#0f0f1a',
+  },
+  pdfWrapper: {
+    flex: 1,
+  },
+  pdf: {
+    flex: 1,
+    width: SCREEN_WIDTH,
+    backgroundColor: '#0f0f1a',
+  },
+  loadingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#0f0f1a',
+    gap: 12,
+    zIndex: 5,
+  },
+  loadingText: {
+    color: '#64748b',
+    fontSize: 14,
+  },
+  pageIndicator: {
+    position: 'absolute',
+    bottom: 58,
+    right: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: '#1e1e35cc',
+    borderRadius: 12,
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderWidth: 1,
+    borderColor: '#ffffff10',
+  },
+  pageIndicatorText: {
+    color: '#94a3b8',
+    fontSize: 12,
+    fontWeight: '600',
+    fontVariant: ['tabular-nums'],
+  },
+  changePdfBtn: {
+    position: 'absolute',
+    bottom: 16,
+    right: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+    backgroundColor: '#1e1e35ee',
+    borderRadius: 20,
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderWidth: 1,
+    borderColor: '#a78bfa30',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 6,
+    elevation: 4,
+  },
+  changePdfText: {
+    color: '#a78bfa',
+    backgroundColor: '#12121f',
+    borderRadius: 12,
+    borderWidth: 1,
+    borderColor: '#6366f140',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    fontSize: 22,
+    fontWeight: '700',
+    color: '#f1f5f9',
+    textAlign: 'center',
+    fontVariant: ['tabular-nums'],
+    marginBottom: 16,
+  },
+  jumpActions: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  jumpCancelBtn: {
+    flex: 1,
+    backgroundColor: '#12121f',
+    borderRadius: 12,
+    paddingVertical: 12,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: '#ffffff08',
+  },
+  jumpCancelText: {
+    color: '#64748b',
+    fontSize: 15,
+    fontWeight: '600',
+  },
+  jumpGoBtn: {
+    flex: 1,
+    backgroundColor: '#6366f1',
+    borderRadius: 12,
+    paddingVertical: 12,
+    alignItems: 'center',
+    shadowColor: '#6366f1',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 8,
+    elevation: 4,
+  },
+  jumpGoText: {
+    color: '#fff',
+    fontSize: 15,
+    fontWeight: '700',
+  },
+});
