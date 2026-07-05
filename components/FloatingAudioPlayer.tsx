@@ -318,6 +318,116 @@ export default function FloatingAudioPlayer({
 
         {/* Skip forward */}
         <TouchableOpacity
+          style={[styles.controlBtn, !audio.isLoaded && styles.controlBtnDisabled]}
+          onPress={() => audio.skipForward(15)}
+          disabled={!audio.isLoaded}
+        >
+          <Ionicons name="play-forward" size={22} color={audio.isLoaded ? '#cbd5e1' : '#334155'} />
+          <Text style={[styles.skipLabel, !audio.isLoaded && styles.skipLabelDisabled]}>15</Text>
+        </TouchableOpacity>
+
+        {/* Spacer to balance speed button */}
+        <View style={styles.speedPlaceholder} />
+      </View>
+
+      {/* Sleep Timer Modal */}
+      <Modal
+        visible={showSleepModal}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setShowSleepModal(false)}
+      >
+        <Pressable
+          style={styles.modalBackdrop}
+          onPress={() => setShowSleepModal(false)}
+        >
+          <Pressable style={styles.modalCard} onPress={() => {}}>
+            <View style={styles.modalHeader}>
+              <Ionicons name="moon" size={20} color="#ec4899" />
+              <Text style={styles.modalTitle}>Sleep Timer</Text>
+            </View>
+            <Text style={styles.modalSubtitle}>
+              Auto-pause audio after a set time
+            </Text>
+
+            <View style={styles.timerGrid}>
+              {SLEEP_TIMER_OPTIONS.map((min) => (
+                <TouchableOpacity
+                  key={min}
+                  style={[
+                    styles.timerOption,
+                    audio.sleepTimerMs !== null &&
+                      Math.abs(audio.sleepTimerMs - min * 60 * 1000) < 60000 &&
+                      styles.timerOptionActive,
+                  ]}
+                  onPress={() => handleSleepTimer(min)}
+                >
+                  <Text style={styles.timerOptionValue}>{min}</Text>
+                  <Text style={styles.timerOptionUnit}>min</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+
+            {sleepTimerActive && (
+              <TouchableOpacity
+                style={styles.cancelTimerBtn}
+                onPress={() => handleSleepTimer(null)}
+              >
+                <Ionicons name="close-circle-outline" size={18} color="#f87171" />
+                <Text style={styles.cancelTimerText}>Cancel Timer</Text>
+              </TouchableOpacity>
+            )}
+
+            <TouchableOpacity
+              style={styles.modalClose}
+              onPress={() => setShowSleepModal(false)}
+            >
+              <Text style={styles.modalCloseText}>Dismiss</Text>
+            </TouchableOpacity>
+          </Pressable>
+        </Pressable>
+      </Modal>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#1a1a2e',
+    borderBottomWidth: 1,
+    borderBottomColor: '#ffffff0f',
+    paddingHorizontal: 16,
+    paddingTop: 10,
+    paddingBottom: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+    elevation: 6,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginBottom: 8,
+  },
+  fileInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    flex: 1,
+    gap: 8,
+    marginRight: 8,
+  },
+  audioIcon: {
+    width: 24,
+    height: 24,
+    borderRadius: 6,
+    backgroundColor: '#a78bfa22',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  filename: {
+    fontSize: 13,
   return <View style={styles.container} />;
 }
 const styles = StyleSheet.create({ container: { padding: 16 } });
