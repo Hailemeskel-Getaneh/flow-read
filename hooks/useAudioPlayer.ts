@@ -238,5 +238,64 @@ export function useAudioPlayer(): AudioState & AudioControls {
   );
 
   const setSleepTimer = useCallback(
-  return { ...state, loadAudio, unload, play, pause, seekTo, skipBackward, skipForward, setRate } as any;
+    (minutes: number | null) => {
+      // Clear any existing timer
+      if (sleepTimerRef.current) {
+        clearInterval(sleepTimerRef.current);
+        sleepTimerRef.current = null;
+      }
+
+      if (minutes === null) {
+        safeSetState((prev) => ({ ...prev, sleepTimerMs: null }));
+        return;
+      }
+
+      const totalMs = minutes * 60 * 1000;
+      safeSetState((prev) => ({ ...prev, sleepTimerMs: totalMs }));
+
+      const startTime = Date.now();
+      sleepTimerRef.current = setInterval(() => {
+        const elapsed = Date.now() - startTime;
+        const remaining = totalMs - elapsed;
+
+        if (remaining <= 0) {
+          // Timer expired — pause audio
+          if (sleepTimerRef.current) {
+            clearInterval(sleepTimerRef.current);
+            sleepTimerRef.current = null;
+          }
+          soundRef.current?.pauseAsync().catch(() => {});
+          safeSetState((prev) => ({ ...prev, sleepTimerMs: null, isPlaying: false }));
+        } else {
+          safeSetState((prev) => ({ ...prev, sleepTimerMs: remaining }));
+        }
+      }, 1000);
+    },
+    [safeSetState],
+  );
+
+  const unload = useCallback(async () => {
+    if (sleepTimerRef.current) {
+      clearInterval(sleepTimerRef.current);
+      sleepTimerRef.current = null;
+    }
+    if (soundRef.current) {
+      await soundRef.current.unloadAsync();
+      soundRef.current = null;
+    }
+    safeSetState(() => ({ ...INITIAL_STATE }));
+  }, [safeSetState]);
+
+  return {
+    ...state,
+    loadAudio,
+    play,
+    pause,
+    seekTo,
+    skipBackward,
+    skipForward,
+    setRate,
+    setSleepTimer,
+    unload,
+  };
 }
