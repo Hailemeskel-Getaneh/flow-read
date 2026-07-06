@@ -105,3 +105,6 @@ export function rgba(hex: string, alpha: number): string {
   const b = parseInt(cleanHex.substring(4, 6), 16);
   return `rgba(${r}, ${g}, ${b}, ${alpha})`;
 }
+
+Object.freeze(Colors);
+Object.freeze(Theme);
