@@ -19,3 +19,6 @@ export const AUDIO_CONSTANTS = {
   DEFAULT_VOLUME: 1.0,
   PROGRESS_STRIP_HEIGHT: 3,
 };
+
+export const SLEEP_TIMER_PRESETS = [5, 10, 15, 30, 45, 60] as const;
+export type SleepTimerMinutes = typeof SLEEP_TIMER_PRESETS[number];
