@@ -21,3 +21,28 @@ export const Colors = {
   warning: '#f59e0b',
   info: '#3b82f6',
 };
+
+export const Typography = {
+  fontSizes: {
+    xs: 11,
+    sm: 13,
+    base: 15,
+    md: 17,
+    lg: 20,
+    xl: 24,
+    '2xl': 28,
+    '3xl': 34,
+  },
+  fontWeights: {
+    regular: '400',
+    medium: '500',
+    semibold: '600',
+    bold: '700',
+    extrabold: '800',
+  },
+  lineHeights: {
+    tight: 1.2,
+    normal: 1.4,
+    relaxed: 1.6,
+  },
+};
