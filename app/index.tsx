@@ -1,3 +1,4 @@
+// Uses design tokens
 import React, { useEffect, useRef } from 'react';
 import {
   View,
@@ -98,7 +99,7 @@ export default function HomeScreen() {
             <FeatureCard
               icon="sync"
               title="Synchronized"
-              description="Audio keeps playing as you scroll â€” never lose your place"
+              description="Audio keeps playing as you scroll — never lose your place"
               color="#a78bfa"
             />
             <FeatureCard
