@@ -12,3 +12,9 @@ describe('Theme module', () => {
     expect(Theme.Spacing.md).toBe(12);
   });
 });
+
+  it('should correctly convert hex color to rgba with opacity', () => {
+    const { rgba } = require('../utils/theme');
+    expect(rgba('#ffffff', 0.5)).toBe('rgba(255, 255, 255, 0.5)');
+    expect(rgba('#000000', 1)).toBe('rgba(0, 0, 0, 1)');
+  });
