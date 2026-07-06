@@ -1,4 +1,8 @@
 /**
+ * @module Theme
+ * Central design tokens and color definitions for Flow Read.
+ */
+/**
  * Design system colors and tokens for Flow Read.
  */
 export const Colors = {
