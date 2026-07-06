@@ -22,3 +22,6 @@ export const AUDIO_CONSTANTS = {
 
 export const SLEEP_TIMER_PRESETS = [5, 10, 15, 30, 45, 60] as const;
 export type SleepTimerMinutes = typeof SLEEP_TIMER_PRESETS[number];
+
+export const SUPPORTED_DOCUMENT_EXTENSIONS = ['.pdf'] as const;
+export const SUPPORTED_AUDIO_EXTENSIONS = ['.mp3', '.m4a', '.wav', '.aac', '.ogg', '.flac'] as const;
