@@ -1,3 +1,4 @@
+// Enhanced with design token references
 /**
  * Format milliseconds to mm:ss or hh:mm:ss string.
  */
