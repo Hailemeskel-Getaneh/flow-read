@@ -1,6 +1,9 @@
 /**
  * TypeScript types for PDF document viewer and reader.
  */
+/**
+ * Represents a loaded PDF document.
+ */
 export interface PdfDocument {
   uri: string;
   filename: string;
