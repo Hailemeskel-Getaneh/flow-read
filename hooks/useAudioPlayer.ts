@@ -1,3 +1,4 @@
+// Uses types/audio definitions
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Audio } from 'expo-av';
 
@@ -259,7 +260,7 @@ export function useAudioPlayer(): AudioState & AudioControls {
         const remaining = totalMs - elapsed;
 
         if (remaining <= 0) {
-          // Timer expired â€” pause audio
+          // Timer expired — pause audio
           if (sleepTimerRef.current) {
             clearInterval(sleepTimerRef.current);
             sleepTimerRef.current = null;
