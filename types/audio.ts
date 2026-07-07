@@ -16,3 +16,9 @@ export interface SleepTimerConfig {
   remainingMs: number;
   isActive: boolean;
 }
+
+export interface SeekGestureState {
+  isSeeking: boolean;
+  seekPositionMs: number;
+  percentage: number;
+}
