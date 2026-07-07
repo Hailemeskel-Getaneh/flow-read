@@ -8,3 +8,10 @@ export interface PdfDocument {
   currentPage: number;
   fileSize?: number;
 }
+
+export interface PdfViewerProps {
+  uri: string | null;
+  onPickPdf: () => void;
+  onPageChange?: (page: number, total: number) => void;
+  initialPage?: number;
+}
