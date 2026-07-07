@@ -1,3 +1,4 @@
+// Integrated with types/pdf
 import React, { useState, useCallback, useRef } from 'react';
 import {
   View,
@@ -146,7 +147,7 @@ export default function PdfViewer({ uri, onPickPdf, onPageChange }: PdfViewerPro
           renderActivityIndicator={() => (
             <View style={styles.loadingOverlay}>
               <ActivityIndicator size="large" color="#6366f1" />
-              <Text style={styles.loadingText}>Loading PDFâ€¦</Text>
+              <Text style={styles.loadingText}>Loading PDF…</Text>
             </View>
           )}
         />
@@ -156,11 +157,11 @@ export default function PdfViewer({ uri, onPickPdf, onPageChange }: PdfViewerPro
       {isLoading && (
         <View style={styles.loadingOverlay}>
           <ActivityIndicator size="large" color="#6366f1" />
-          <Text style={styles.loadingText}>Loading PDFâ€¦</Text>
+          <Text style={styles.loadingText}>Loading PDF…</Text>
         </View>
       )}
 
-      {/* Page indicator â€” tap to jump */}
+      {/* Page indicator — tap to jump */}
       {totalPages > 0 && (
         <TouchableOpacity
           style={styles.pageIndicator}
@@ -203,7 +204,7 @@ export default function PdfViewer({ uri, onPickPdf, onPageChange }: PdfViewerPro
           />
           <View style={styles.jumpCard}>
             <Text style={styles.jumpTitle}>Go to page</Text>
-            <Text style={styles.jumpSubtitle}>Enter a page number (1 â€“ {totalPages})</Text>
+            <Text style={styles.jumpSubtitle}>Enter a page number (1 – {totalPages})</Text>
             <TextInput
               style={styles.jumpInput}
               value={jumpInput}
