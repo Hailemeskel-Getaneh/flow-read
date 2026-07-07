@@ -15,3 +15,17 @@ export interface PdfViewerProps {
   onPageChange?: (page: number, total: number) => void;
   initialPage?: number;
 }
+
+export interface PdfBookmark {
+  id: string;
+  pageNumber: number;
+  label: string;
+  createdAt: number;
+}
+
+export interface ReadingProgress {
+  documentId: string;
+  lastPage: number;
+  totalPages: number;
+  timestamp: number;
+}
