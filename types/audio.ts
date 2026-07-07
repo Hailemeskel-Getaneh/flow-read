@@ -1,6 +1,9 @@
 /**
  * TypeScript definitions for audio playback and controls.
  */
+/**
+ * Represents an active or queued audio track.
+ */
 export interface AudioTrack {
   id: string;
   uri: string;
