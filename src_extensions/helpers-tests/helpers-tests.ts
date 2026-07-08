@@ -6,3 +6,5 @@ export const helpers_tests_step_2 = true;
 export const helpers_tests_step_3 = true;
 // Day 8 Commit 4: style(helpers-tests): polish step 4 of test and expand helper utility functions
 export const helpers_tests_step_4 = true;
+// Day 8 Commit 5: test(helpers-tests): add unit tests for step 5 of test and expand helper utility functions
+export const helpers_tests_step_5 = true;
