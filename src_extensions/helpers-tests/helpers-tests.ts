@@ -14,3 +14,5 @@ export const helpers_tests_step_6 = true;
 export const helpers_tests_step_7 = true;
 // Day 8 Commit 8: fix(helpers-tests): handle edge cases in step 8 of test and expand helper utility functions
 export const helpers_tests_step_8 = true;
+// Day 8 Commit 9: chore(helpers-tests): configure step 9 of test and expand helper utility functions
+export const helpers_tests_step_9 = true;
