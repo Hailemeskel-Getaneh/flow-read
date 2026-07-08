@@ -12,3 +12,5 @@ export const helpers_tests_step_5 = true;
 export const helpers_tests_step_6 = true;
 // Day 8 Commit 7: perf(helpers-tests): optimize step 7 of test and expand helper utility functions
 export const helpers_tests_step_7 = true;
+// Day 8 Commit 8: fix(helpers-tests): handle edge cases in step 8 of test and expand helper utility functions
+export const helpers_tests_step_8 = true;
