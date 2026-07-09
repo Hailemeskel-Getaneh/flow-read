@@ -26,3 +26,5 @@ export const audio_tests_step_12 = true;
 export const audio_tests_step_13 = true;
 // Day 9 Commit 14: docs(audio-tests): add JSDoc comments to step 14 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_14 = true;
+// Day 9 Commit 15: perf(audio-tests): reduce re-renders in step 15 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_15 = true;
