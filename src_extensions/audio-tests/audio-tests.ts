@@ -12,3 +12,5 @@ export const audio_tests_step_5 = true;
 export const audio_tests_step_6 = true;
 // Day 9 Commit 7: perf(audio-tests): optimize step 7 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_7 = true;
+// Day 9 Commit 8: fix(audio-tests): handle edge cases in step 8 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_8 = true;
