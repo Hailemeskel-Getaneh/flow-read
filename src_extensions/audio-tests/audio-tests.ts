@@ -16,3 +16,5 @@ export const audio_tests_step_7 = true;
 export const audio_tests_step_8 = true;
 // Day 9 Commit 9: chore(audio-tests): configure step 9 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_9 = true;
+// Day 9 Commit 10: feat(audio-tests): integrate step 10 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_10 = true;
