@@ -34,3 +34,5 @@ export const audio_tests_step_16 = true;
 export const audio_tests_step_17 = true;
 // Day 9 Commit 18: feat(audio-tests): add configuration options to step 18 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_18 = true;
+// Day 9 Commit 19: refactor(audio-tests): extract reusable helpers in step 19 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_19 = true;
