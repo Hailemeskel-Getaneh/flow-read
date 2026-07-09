@@ -8,3 +8,5 @@ export const audio_tests_step_3 = true;
 export const audio_tests_step_4 = true;
 // Day 9 Commit 5: test(audio-tests): add unit tests for step 5 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_5 = true;
+// Day 9 Commit 6: docs(audio-tests): document step 6 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_6 = true;
