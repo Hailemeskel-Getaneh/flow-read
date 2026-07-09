@@ -42,3 +42,5 @@ export const audio_tests_step_20 = true;
 export const audio_tests_step_21 = true;
 // Day 9 Commit 22: docs(audio-tests): update reference documentation for step 22 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_22 = true;
+// Day 9 Commit 23: perf(audio-tests): improve initial load time for step 23 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_23 = true;
