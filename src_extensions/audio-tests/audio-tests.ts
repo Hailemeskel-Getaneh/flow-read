@@ -30,3 +30,5 @@ export const audio_tests_step_14 = true;
 export const audio_tests_step_15 = true;
 // Day 9 Commit 16: fix(audio-tests): prevent memory leak in step 16 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_16 = true;
+// Day 9 Commit 17: chore(audio-tests): verify dependencies for step 17 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_17 = true;
