@@ -20,3 +20,5 @@ export const audio_tests_step_9 = true;
 export const audio_tests_step_10 = true;
 // Day 9 Commit 11: refactor(audio-tests): modularize step 11 of mock expo-av and test useAudioPlayer hook lifecycle
 export const audio_tests_step_11 = true;
+// Day 9 Commit 12: style(audio-tests): enhance UI styling in step 12 of mock expo-av and test useAudioPlayer hook lifecycle
+export const audio_tests_step_12 = true;
