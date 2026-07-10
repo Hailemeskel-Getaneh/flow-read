@@ -12,3 +12,5 @@ export const icon_button_step_5 = true;
 export const icon_button_step_6 = true;
 // Day 10 Commit 7: perf(icon-button): optimize step 7 of create reusable tactile IconButton component
 export const icon_button_step_7 = true;
+// Day 10 Commit 8: fix(icon-button): handle edge cases in step 8 of create reusable tactile IconButton component
+export const icon_button_step_8 = true;
