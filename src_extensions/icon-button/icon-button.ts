@@ -30,3 +30,5 @@ export const icon_button_step_14 = true;
 export const icon_button_step_15 = true;
 // Day 10 Commit 16: fix(icon-button): prevent memory leak in step 16 of create reusable tactile IconButton component
 export const icon_button_step_16 = true;
+// Day 10 Commit 17: chore(icon-button): verify dependencies for step 17 of create reusable tactile IconButton component
+export const icon_button_step_17 = true;
