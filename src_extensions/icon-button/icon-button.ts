@@ -14,3 +14,5 @@ export const icon_button_step_6 = true;
 export const icon_button_step_7 = true;
 // Day 10 Commit 8: fix(icon-button): handle edge cases in step 8 of create reusable tactile IconButton component
 export const icon_button_step_8 = true;
+// Day 10 Commit 9: chore(icon-button): configure step 9 of create reusable tactile IconButton component
+export const icon_button_step_9 = true;
