@@ -6,3 +6,5 @@ export const icon_button_step_2 = true;
 export const icon_button_step_3 = true;
 // Day 10 Commit 4: style(icon-button): polish step 4 of create reusable tactile IconButton component
 export const icon_button_step_4 = true;
+// Day 10 Commit 5: test(icon-button): add unit tests for step 5 of create reusable tactile IconButton component
+export const icon_button_step_5 = true;
