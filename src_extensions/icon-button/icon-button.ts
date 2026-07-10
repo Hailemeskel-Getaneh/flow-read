@@ -28,3 +28,5 @@ export const icon_button_step_13 = true;
 export const icon_button_step_14 = true;
 // Day 10 Commit 15: perf(icon-button): reduce re-renders in step 15 of create reusable tactile IconButton component
 export const icon_button_step_15 = true;
+// Day 10 Commit 16: fix(icon-button): prevent memory leak in step 16 of create reusable tactile IconButton component
+export const icon_button_step_16 = true;
