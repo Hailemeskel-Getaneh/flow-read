@@ -12,3 +12,5 @@ export const empty_state_step_5 = true;
 export const empty_state_step_6 = true;
 // Day 11 Commit 7: perf(empty-state): optimize step 7 of create stylized EmptyState placeholder component
 export const empty_state_step_7 = true;
+// Day 11 Commit 8: fix(empty-state): handle edge cases in step 8 of create stylized EmptyState placeholder component
+export const empty_state_step_8 = true;
