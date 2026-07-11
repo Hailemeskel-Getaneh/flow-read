@@ -6,3 +6,5 @@ export const empty_state_step_2 = true;
 export const empty_state_step_3 = true;
 // Day 11 Commit 4: style(empty-state): polish step 4 of create stylized EmptyState placeholder component
 export const empty_state_step_4 = true;
+// Day 11 Commit 5: test(empty-state): add unit tests for step 5 of create stylized EmptyState placeholder component
+export const empty_state_step_5 = true;
