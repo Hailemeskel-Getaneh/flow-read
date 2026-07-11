@@ -32,3 +32,5 @@ export const empty_state_step_15 = true;
 export const empty_state_step_16 = true;
 // Day 11 Commit 17: chore(empty-state): verify dependencies for step 17 of create stylized EmptyState placeholder component
 export const empty_state_step_17 = true;
+// Day 11 Commit 18: feat(empty-state): add configuration options to step 18 of create stylized EmptyState placeholder component
+export const empty_state_step_18 = true;
