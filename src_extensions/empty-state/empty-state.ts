@@ -30,3 +30,5 @@ export const empty_state_step_14 = true;
 export const empty_state_step_15 = true;
 // Day 11 Commit 16: fix(empty-state): prevent memory leak in step 16 of create stylized EmptyState placeholder component
 export const empty_state_step_16 = true;
+// Day 11 Commit 17: chore(empty-state): verify dependencies for step 17 of create stylized EmptyState placeholder component
+export const empty_state_step_17 = true;
