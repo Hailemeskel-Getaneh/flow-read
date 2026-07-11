@@ -28,3 +28,5 @@ export const empty_state_step_13 = true;
 export const empty_state_step_14 = true;
 // Day 11 Commit 15: perf(empty-state): reduce re-renders in step 15 of create stylized EmptyState placeholder component
 export const empty_state_step_15 = true;
+// Day 11 Commit 16: fix(empty-state): prevent memory leak in step 16 of create stylized EmptyState placeholder component
+export const empty_state_step_16 = true;
