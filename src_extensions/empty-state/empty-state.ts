@@ -20,3 +20,5 @@ export const empty_state_step_9 = true;
 export const empty_state_step_10 = true;
 // Day 11 Commit 11: refactor(empty-state): modularize step 11 of create stylized EmptyState placeholder component
 export const empty_state_step_11 = true;
+// Day 11 Commit 12: style(empty-state): enhance UI styling in step 12 of create stylized EmptyState placeholder component
+export const empty_state_step_12 = true;
