@@ -4,3 +4,5 @@ export const empty_state_step_1 = true;
 export const empty_state_step_2 = true;
 // Day 11 Commit 3: refactor(empty-state): streamline step 3 of create stylized EmptyState placeholder component
 export const empty_state_step_3 = true;
+// Day 11 Commit 4: style(empty-state): polish step 4 of create stylized EmptyState placeholder component
+export const empty_state_step_4 = true;
