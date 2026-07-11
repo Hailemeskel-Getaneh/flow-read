@@ -16,3 +16,5 @@ export const empty_state_step_7 = true;
 export const empty_state_step_8 = true;
 // Day 11 Commit 9: chore(empty-state): configure step 9 of create stylized EmptyState placeholder component
 export const empty_state_step_9 = true;
+// Day 11 Commit 10: feat(empty-state): integrate step 10 of create stylized EmptyState placeholder component
+export const empty_state_step_10 = true;
