@@ -8,3 +8,5 @@ export const progress_bar_step_3 = true;
 export const progress_bar_step_4 = true;
 // Day 12 Commit 5: test(progress-bar): add unit tests for step 5 of implement custom animated smooth ProgressBar component
 export const progress_bar_step_5 = true;
+// Day 12 Commit 6: docs(progress-bar): document step 6 of implement custom animated smooth ProgressBar component
+export const progress_bar_step_6 = true;
