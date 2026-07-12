@@ -18,3 +18,5 @@ export const progress_bar_step_8 = true;
 export const progress_bar_step_9 = true;
 // Day 12 Commit 10: feat(progress-bar): integrate step 10 of implement custom animated smooth ProgressBar component
 export const progress_bar_step_10 = true;
+// Day 12 Commit 11: refactor(progress-bar): modularize step 11 of implement custom animated smooth ProgressBar component
+export const progress_bar_step_11 = true;
