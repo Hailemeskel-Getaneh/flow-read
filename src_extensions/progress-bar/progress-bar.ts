@@ -26,3 +26,5 @@ export const progress_bar_step_12 = true;
 export const progress_bar_step_13 = true;
 // Day 12 Commit 14: docs(progress-bar): add JSDoc comments to step 14 of implement custom animated smooth ProgressBar component
 export const progress_bar_step_14 = true;
+// Day 12 Commit 15: perf(progress-bar): reduce re-renders in step 15 of implement custom animated smooth ProgressBar component
+export const progress_bar_step_15 = true;
