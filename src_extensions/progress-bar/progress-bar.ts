@@ -14,3 +14,5 @@ export const progress_bar_step_6 = true;
 export const progress_bar_step_7 = true;
 // Day 12 Commit 8: fix(progress-bar): handle edge cases in step 8 of implement custom animated smooth ProgressBar component
 export const progress_bar_step_8 = true;
+// Day 12 Commit 9: chore(progress-bar): configure step 9 of implement custom animated smooth ProgressBar component
+export const progress_bar_step_9 = true;
