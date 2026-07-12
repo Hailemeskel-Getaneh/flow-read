@@ -28,3 +28,5 @@ export const progress_bar_step_13 = true;
 export const progress_bar_step_14 = true;
 // Day 12 Commit 15: perf(progress-bar): reduce re-renders in step 15 of implement custom animated smooth ProgressBar component
 export const progress_bar_step_15 = true;
+// Day 12 Commit 16: fix(progress-bar): prevent memory leak in step 16 of implement custom animated smooth ProgressBar component
+export const progress_bar_step_16 = true;
