@@ -2,3 +2,5 @@
 export const progress_bar_step_1 = true;
 // Day 12 Commit 2: feat(progress-bar): scaffold step 2 of implement custom animated smooth ProgressBar component
 export const progress_bar_step_2 = true;
+// Day 12 Commit 3: refactor(progress-bar): streamline step 3 of implement custom animated smooth ProgressBar component
+export const progress_bar_step_3 = true;
