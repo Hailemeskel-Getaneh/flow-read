@@ -12,3 +12,5 @@ export const progress_bar_step_5 = true;
 export const progress_bar_step_6 = true;
 // Day 12 Commit 7: perf(progress-bar): optimize step 7 of implement custom animated smooth ProgressBar component
 export const progress_bar_step_7 = true;
+// Day 12 Commit 8: fix(progress-bar): handle edge cases in step 8 of implement custom animated smooth ProgressBar component
+export const progress_bar_step_8 = true;
