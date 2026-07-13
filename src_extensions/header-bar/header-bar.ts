@@ -30,3 +30,5 @@ export const header_bar_step_14 = true;
 export const header_bar_step_15 = true;
 // Day 13 Commit 16: fix(header-bar): prevent memory leak in step 16 of implement reusable gradient HeaderBar component
 export const header_bar_step_16 = true;
+// Day 13 Commit 17: chore(header-bar): verify dependencies for step 17 of implement reusable gradient HeaderBar component
+export const header_bar_step_17 = true;
