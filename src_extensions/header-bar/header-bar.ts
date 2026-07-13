@@ -6,3 +6,5 @@ export const header_bar_step_2 = true;
 export const header_bar_step_3 = true;
 // Day 13 Commit 4: style(header-bar): polish step 4 of implement reusable gradient HeaderBar component
 export const header_bar_step_4 = true;
+// Day 13 Commit 5: test(header-bar): add unit tests for step 5 of implement reusable gradient HeaderBar component
+export const header_bar_step_5 = true;
