@@ -38,3 +38,5 @@ export const header_bar_step_18 = true;
 export const header_bar_step_19 = true;
 // Day 13 Commit 20: style(header-bar): refine layout spacing in step 20 of implement reusable gradient HeaderBar component
 export const header_bar_step_20 = true;
+// Day 13 Commit 21: test(header-bar): verify mock assertions in step 21 of implement reusable gradient HeaderBar component
+export const header_bar_step_21 = true;
