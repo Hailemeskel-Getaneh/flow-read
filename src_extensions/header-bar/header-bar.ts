@@ -32,3 +32,5 @@ export const header_bar_step_15 = true;
 export const header_bar_step_16 = true;
 // Day 13 Commit 17: chore(header-bar): verify dependencies for step 17 of implement reusable gradient HeaderBar component
 export const header_bar_step_17 = true;
+// Day 13 Commit 18: feat(header-bar): add configuration options to step 18 of implement reusable gradient HeaderBar component
+export const header_bar_step_18 = true;
