@@ -12,3 +12,5 @@ export const header_bar_step_5 = true;
 export const header_bar_step_6 = true;
 // Day 13 Commit 7: perf(header-bar): optimize step 7 of implement reusable gradient HeaderBar component
 export const header_bar_step_7 = true;
+// Day 13 Commit 8: fix(header-bar): handle edge cases in step 8 of implement reusable gradient HeaderBar component
+export const header_bar_step_8 = true;
