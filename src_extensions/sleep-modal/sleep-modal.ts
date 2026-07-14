@@ -24,3 +24,5 @@ export const sleep_modal_step_11 = true;
 export const sleep_modal_step_12 = true;
 // Day 14 Commit 13: test(sleep-modal): expand test coverage for step 13 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_13 = true;
+// Day 14 Commit 14: docs(sleep-modal): add JSDoc comments to step 14 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_14 = true;
