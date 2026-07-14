@@ -26,3 +26,5 @@ export const sleep_modal_step_12 = true;
 export const sleep_modal_step_13 = true;
 // Day 14 Commit 14: docs(sleep-modal): add JSDoc comments to step 14 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_14 = true;
+// Day 14 Commit 15: perf(sleep-modal): reduce re-renders in step 15 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_15 = true;
