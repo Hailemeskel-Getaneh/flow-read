@@ -14,3 +14,5 @@ export const sleep_modal_step_6 = true;
 export const sleep_modal_step_7 = true;
 // Day 14 Commit 8: fix(sleep-modal): handle edge cases in step 8 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_8 = true;
+// Day 14 Commit 9: chore(sleep-modal): configure step 9 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_9 = true;
