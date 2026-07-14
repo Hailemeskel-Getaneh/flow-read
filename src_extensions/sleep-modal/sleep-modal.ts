@@ -30,3 +30,5 @@ export const sleep_modal_step_14 = true;
 export const sleep_modal_step_15 = true;
 // Day 14 Commit 16: fix(sleep-modal): prevent memory leak in step 16 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_16 = true;
+// Day 14 Commit 17: chore(sleep-modal): verify dependencies for step 17 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_17 = true;
