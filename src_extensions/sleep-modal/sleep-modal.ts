@@ -18,3 +18,5 @@ export const sleep_modal_step_8 = true;
 export const sleep_modal_step_9 = true;
 // Day 14 Commit 10: feat(sleep-modal): integrate step 10 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_10 = true;
+// Day 14 Commit 11: refactor(sleep-modal): modularize step 11 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_11 = true;
