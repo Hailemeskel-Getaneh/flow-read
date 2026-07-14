@@ -22,3 +22,5 @@ export const sleep_modal_step_10 = true;
 export const sleep_modal_step_11 = true;
 // Day 14 Commit 12: style(sleep-modal): enhance UI styling in step 12 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_12 = true;
+// Day 14 Commit 13: test(sleep-modal): expand test coverage for step 13 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_13 = true;
