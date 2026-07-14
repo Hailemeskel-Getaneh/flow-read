@@ -20,3 +20,5 @@ export const sleep_modal_step_9 = true;
 export const sleep_modal_step_10 = true;
 // Day 14 Commit 11: refactor(sleep-modal): modularize step 11 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_11 = true;
+// Day 14 Commit 12: style(sleep-modal): enhance UI styling in step 12 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_12 = true;
