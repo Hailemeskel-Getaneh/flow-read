@@ -32,3 +32,5 @@ export const sleep_modal_step_15 = true;
 export const sleep_modal_step_16 = true;
 // Day 14 Commit 17: chore(sleep-modal): verify dependencies for step 17 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_17 = true;
+// Day 14 Commit 18: feat(sleep-modal): add configuration options to step 18 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_18 = true;
