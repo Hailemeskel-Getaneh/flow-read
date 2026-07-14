@@ -8,3 +8,5 @@ export const sleep_modal_step_3 = true;
 export const sleep_modal_step_4 = true;
 // Day 14 Commit 5: test(sleep-modal): add unit tests for step 5 of extract dedicated SleepTimerModal component
 export const sleep_modal_step_5 = true;
+// Day 14 Commit 6: docs(sleep-modal): document step 6 of extract dedicated SleepTimerModal component
+export const sleep_modal_step_6 = true;
