@@ -40,3 +40,5 @@ export const speed_modal_step_19 = true;
 export const speed_modal_step_20 = true;
 // Day 15 Commit 21: test(speed-modal): verify mock assertions in step 21 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_21 = true;
+// Day 15 Commit 22: docs(speed-modal): update reference documentation for step 22 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_22 = true;
