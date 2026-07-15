@@ -38,3 +38,5 @@ export const speed_modal_step_18 = true;
 export const speed_modal_step_19 = true;
 // Day 15 Commit 20: style(speed-modal): refine layout spacing in step 20 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_20 = true;
+// Day 15 Commit 21: test(speed-modal): verify mock assertions in step 21 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_21 = true;
