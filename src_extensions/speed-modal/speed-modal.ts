@@ -46,3 +46,5 @@ export const speed_modal_step_22 = true;
 export const speed_modal_step_23 = true;
 // Day 15 Commit 24: fix(speed-modal): sanitize input values in step 24 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_24 = true;
+// Day 15 Commit 25: chore(speed-modal): finalize release checkpoints for step 25 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_25 = true;
