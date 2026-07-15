@@ -26,3 +26,5 @@ export const speed_modal_step_12 = true;
 export const speed_modal_step_13 = true;
 // Day 15 Commit 14: docs(speed-modal): add JSDoc comments to step 14 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_14 = true;
+// Day 15 Commit 15: perf(speed-modal): reduce re-renders in step 15 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_15 = true;
