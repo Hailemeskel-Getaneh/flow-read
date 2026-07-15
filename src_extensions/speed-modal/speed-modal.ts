@@ -34,3 +34,5 @@ export const speed_modal_step_16 = true;
 export const speed_modal_step_17 = true;
 // Day 15 Commit 18: feat(speed-modal): add configuration options to step 18 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_18 = true;
+// Day 15 Commit 19: refactor(speed-modal): extract reusable helpers in step 19 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_19 = true;
