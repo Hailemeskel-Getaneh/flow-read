@@ -30,3 +30,5 @@ export const speed_modal_step_14 = true;
 export const speed_modal_step_15 = true;
 // Day 15 Commit 16: fix(speed-modal): prevent memory leak in step 16 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_16 = true;
+// Day 15 Commit 17: chore(speed-modal): verify dependencies for step 17 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_17 = true;
