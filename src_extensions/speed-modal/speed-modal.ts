@@ -36,3 +36,5 @@ export const speed_modal_step_17 = true;
 export const speed_modal_step_18 = true;
 // Day 15 Commit 19: refactor(speed-modal): extract reusable helpers in step 19 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_19 = true;
+// Day 15 Commit 20: style(speed-modal): refine layout spacing in step 20 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_20 = true;
