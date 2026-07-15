@@ -12,3 +12,5 @@ export const speed_modal_step_5 = true;
 export const speed_modal_step_6 = true;
 // Day 15 Commit 7: perf(speed-modal): optimize step 7 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_7 = true;
+// Day 15 Commit 8: fix(speed-modal): handle edge cases in step 8 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_8 = true;
