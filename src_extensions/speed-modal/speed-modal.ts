@@ -42,3 +42,5 @@ export const speed_modal_step_20 = true;
 export const speed_modal_step_21 = true;
 // Day 15 Commit 22: docs(speed-modal): update reference documentation for step 22 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_22 = true;
+// Day 15 Commit 23: perf(speed-modal): improve initial load time for step 23 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_23 = true;
