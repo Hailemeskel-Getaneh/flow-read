@@ -8,3 +8,5 @@ export const speed_modal_step_3 = true;
 export const speed_modal_step_4 = true;
 // Day 15 Commit 5: test(speed-modal): add unit tests for step 5 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_5 = true;
+// Day 15 Commit 6: docs(speed-modal): document step 6 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_6 = true;
