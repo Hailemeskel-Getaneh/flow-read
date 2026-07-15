@@ -18,3 +18,5 @@ export const speed_modal_step_8 = true;
 export const speed_modal_step_9 = true;
 // Day 15 Commit 10: feat(speed-modal): integrate step 10 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_10 = true;
+// Day 15 Commit 11: refactor(speed-modal): modularize step 11 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_11 = true;
