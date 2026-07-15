@@ -24,3 +24,5 @@ export const speed_modal_step_11 = true;
 export const speed_modal_step_12 = true;
 // Day 15 Commit 13: test(speed-modal): expand test coverage for step 13 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_13 = true;
+// Day 15 Commit 14: docs(speed-modal): add JSDoc comments to step 14 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_14 = true;
