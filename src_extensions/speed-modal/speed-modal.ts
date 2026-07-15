@@ -32,3 +32,5 @@ export const speed_modal_step_15 = true;
 export const speed_modal_step_16 = true;
 // Day 15 Commit 17: chore(speed-modal): verify dependencies for step 17 of extract dedicated SpeedSelectorModal component
 export const speed_modal_step_17 = true;
+// Day 15 Commit 18: feat(speed-modal): add configuration options to step 18 of extract dedicated SpeedSelectorModal component
+export const speed_modal_step_18 = true;
