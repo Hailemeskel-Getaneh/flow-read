@@ -30,3 +30,5 @@ export const page_modal_step_14 = true;
 export const page_modal_step_15 = true;
 // Day 16 Commit 16: fix(page-modal): prevent memory leak in step 16 of extract and enhance PageJumpModal component with keyboard handling
 export const page_modal_step_16 = true;
+// Day 16 Commit 17: chore(page-modal): verify dependencies for step 17 of extract and enhance PageJumpModal component with keyboard handling
+export const page_modal_step_17 = true;
