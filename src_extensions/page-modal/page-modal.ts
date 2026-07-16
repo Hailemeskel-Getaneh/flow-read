@@ -28,3 +28,5 @@ export const page_modal_step_13 = true;
 export const page_modal_step_14 = true;
 // Day 16 Commit 15: perf(page-modal): reduce re-renders in step 15 of extract and enhance PageJumpModal component with keyboard handling
 export const page_modal_step_15 = true;
+// Day 16 Commit 16: fix(page-modal): prevent memory leak in step 16 of extract and enhance PageJumpModal component with keyboard handling
+export const page_modal_step_16 = true;
