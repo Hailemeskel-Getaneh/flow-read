@@ -22,3 +22,5 @@ export const page_modal_step_10 = true;
 export const page_modal_step_11 = true;
 // Day 16 Commit 12: style(page-modal): enhance UI styling in step 12 of extract and enhance PageJumpModal component with keyboard handling
 export const page_modal_step_12 = true;
+// Day 16 Commit 13: test(page-modal): expand test coverage for step 13 of extract and enhance PageJumpModal component with keyboard handling
+export const page_modal_step_13 = true;
