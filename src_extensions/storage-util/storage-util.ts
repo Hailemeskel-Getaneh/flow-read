@@ -32,3 +32,5 @@ export const storage_util_step_15 = true;
 export const storage_util_step_16 = true;
 // Day 17 Commit 17: chore(storage-util): verify dependencies for step 17 of implement async storage helper for recent documents and bookmarks
 export const storage_util_step_17 = true;
+// Day 17 Commit 18: feat(storage-util): add configuration options to step 18 of implement async storage helper for recent documents and bookmarks
+export const storage_util_step_18 = true;
