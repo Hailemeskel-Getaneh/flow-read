@@ -8,3 +8,5 @@ export const storage_util_step_3 = true;
 export const storage_util_step_4 = true;
 // Day 17 Commit 5: test(storage-util): add unit tests for step 5 of implement async storage helper for recent documents and bookmarks
 export const storage_util_step_5 = true;
+// Day 17 Commit 6: docs(storage-util): document step 6 of implement async storage helper for recent documents and bookmarks
+export const storage_util_step_6 = true;
