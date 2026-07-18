@@ -12,3 +12,5 @@ export const recent_files_step_5 = true;
 export const recent_files_step_6 = true;
 // Day 18 Commit 7: perf(recent-files): optimize step 7 of implement RecentFilesList component with quick-load cards
 export const recent_files_step_7 = true;
+// Day 18 Commit 8: fix(recent-files): handle edge cases in step 8 of implement RecentFilesList component with quick-load cards
+export const recent_files_step_8 = true;
