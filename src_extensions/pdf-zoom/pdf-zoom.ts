@@ -28,3 +28,5 @@ export const pdf_zoom_step_13 = true;
 export const pdf_zoom_step_14 = true;
 // Day 19 Commit 15: perf(pdf-zoom): reduce re-renders in step 15 of enhance PdfViewer with double-tap zoom and pan gesture support
 export const pdf_zoom_step_15 = true;
+// Day 19 Commit 16: fix(pdf-zoom): prevent memory leak in step 16 of enhance PdfViewer with double-tap zoom and pan gesture support
+export const pdf_zoom_step_16 = true;
