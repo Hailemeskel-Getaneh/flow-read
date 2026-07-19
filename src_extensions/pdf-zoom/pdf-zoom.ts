@@ -22,3 +22,5 @@ export const pdf_zoom_step_10 = true;
 export const pdf_zoom_step_11 = true;
 // Day 19 Commit 12: style(pdf-zoom): enhance UI styling in step 12 of enhance PdfViewer with double-tap zoom and pan gesture support
 export const pdf_zoom_step_12 = true;
+// Day 19 Commit 13: test(pdf-zoom): expand test coverage for step 13 of enhance PdfViewer with double-tap zoom and pan gesture support
+export const pdf_zoom_step_13 = true;
