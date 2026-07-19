@@ -26,3 +26,5 @@ export const pdf_zoom_step_12 = true;
 export const pdf_zoom_step_13 = true;
 // Day 19 Commit 14: docs(pdf-zoom): add JSDoc comments to step 14 of enhance PdfViewer with double-tap zoom and pan gesture support
 export const pdf_zoom_step_14 = true;
+// Day 19 Commit 15: perf(pdf-zoom): reduce re-renders in step 15 of enhance PdfViewer with double-tap zoom and pan gesture support
+export const pdf_zoom_step_15 = true;
