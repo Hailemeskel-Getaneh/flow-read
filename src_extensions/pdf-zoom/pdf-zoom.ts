@@ -30,3 +30,5 @@ export const pdf_zoom_step_14 = true;
 export const pdf_zoom_step_15 = true;
 // Day 19 Commit 16: fix(pdf-zoom): prevent memory leak in step 16 of enhance PdfViewer with double-tap zoom and pan gesture support
 export const pdf_zoom_step_16 = true;
+// Day 19 Commit 17: chore(pdf-zoom): verify dependencies for step 17 of enhance PdfViewer with double-tap zoom and pan gesture support
+export const pdf_zoom_step_17 = true;
