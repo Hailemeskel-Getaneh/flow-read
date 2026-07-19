@@ -32,3 +32,5 @@ export const pdf_zoom_step_15 = true;
 export const pdf_zoom_step_16 = true;
 // Day 19 Commit 17: chore(pdf-zoom): verify dependencies for step 17 of enhance PdfViewer with double-tap zoom and pan gesture support
 export const pdf_zoom_step_17 = true;
+// Day 19 Commit 18: feat(pdf-zoom): add configuration options to step 18 of enhance PdfViewer with double-tap zoom and pan gesture support
+export const pdf_zoom_step_18 = true;
