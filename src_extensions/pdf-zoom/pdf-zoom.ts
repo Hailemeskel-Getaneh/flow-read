@@ -8,3 +8,5 @@ export const pdf_zoom_step_3 = true;
 export const pdf_zoom_step_4 = true;
 // Day 19 Commit 5: test(pdf-zoom): add unit tests for step 5 of enhance PdfViewer with double-tap zoom and pan gesture support
 export const pdf_zoom_step_5 = true;
+// Day 19 Commit 6: docs(pdf-zoom): document step 6 of enhance PdfViewer with double-tap zoom and pan gesture support
+export const pdf_zoom_step_6 = true;
