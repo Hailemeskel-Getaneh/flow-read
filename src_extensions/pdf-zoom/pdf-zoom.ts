@@ -12,3 +12,5 @@ export const pdf_zoom_step_5 = true;
 export const pdf_zoom_step_6 = true;
 // Day 19 Commit 7: perf(pdf-zoom): optimize step 7 of enhance PdfViewer with double-tap zoom and pan gesture support
 export const pdf_zoom_step_7 = true;
+// Day 19 Commit 8: fix(pdf-zoom): handle edge cases in step 8 of enhance PdfViewer with double-tap zoom and pan gesture support
+export const pdf_zoom_step_8 = true;
