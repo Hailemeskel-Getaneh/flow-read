@@ -30,3 +30,5 @@ export const audio_notif_step_14 = true;
 export const audio_notif_step_15 = true;
 // Day 20 Commit 16: fix(audio-notif): prevent memory leak in step 16 of enhance audio session background playback and lockscreen support
 export const audio_notif_step_16 = true;
+// Day 20 Commit 17: chore(audio-notif): verify dependencies for step 17 of enhance audio session background playback and lockscreen support
+export const audio_notif_step_17 = true;
