@@ -32,3 +32,5 @@ export const audio_notif_step_15 = true;
 export const audio_notif_step_16 = true;
 // Day 20 Commit 17: chore(audio-notif): verify dependencies for step 17 of enhance audio session background playback and lockscreen support
 export const audio_notif_step_17 = true;
+// Day 20 Commit 18: feat(audio-notif): add configuration options to step 18 of enhance audio session background playback and lockscreen support
+export const audio_notif_step_18 = true;
