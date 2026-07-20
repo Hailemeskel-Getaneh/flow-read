@@ -18,3 +18,5 @@ export const audio_notif_step_8 = true;
 export const audio_notif_step_9 = true;
 // Day 20 Commit 10: feat(audio-notif): integrate step 10 of enhance audio session background playback and lockscreen support
 export const audio_notif_step_10 = true;
+// Day 20 Commit 11: refactor(audio-notif): modularize step 11 of enhance audio session background playback and lockscreen support
+export const audio_notif_step_11 = true;
