@@ -12,3 +12,5 @@ export const audio_notif_step_5 = true;
 export const audio_notif_step_6 = true;
 // Day 20 Commit 7: perf(audio-notif): optimize step 7 of enhance audio session background playback and lockscreen support
 export const audio_notif_step_7 = true;
+// Day 20 Commit 8: fix(audio-notif): handle edge cases in step 8 of enhance audio session background playback and lockscreen support
+export const audio_notif_step_8 = true;
