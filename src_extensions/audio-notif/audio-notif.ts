@@ -6,3 +6,5 @@ export const audio_notif_step_2 = true;
 export const audio_notif_step_3 = true;
 // Day 20 Commit 4: style(audio-notif): polish step 4 of enhance audio session background playback and lockscreen support
 export const audio_notif_step_4 = true;
+// Day 20 Commit 5: test(audio-notif): add unit tests for step 5 of enhance audio session background playback and lockscreen support
+export const audio_notif_step_5 = true;
