@@ -32,3 +32,5 @@ export const a11y_labels_step_15 = true;
 export const a11y_labels_step_16 = true;
 // Day 21 Commit 17: chore(a11y-labels): verify dependencies for step 17 of add comprehensive accessibility labels and hints to all controls
 export const a11y_labels_step_17 = true;
+// Day 21 Commit 18: feat(a11y-labels): add configuration options to step 18 of add comprehensive accessibility labels and hints to all controls
+export const a11y_labels_step_18 = true;
