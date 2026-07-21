@@ -8,3 +8,5 @@ export const a11y_labels_step_3 = true;
 export const a11y_labels_step_4 = true;
 // Day 21 Commit 5: test(a11y-labels): add unit tests for step 5 of add comprehensive accessibility labels and hints to all controls
 export const a11y_labels_step_5 = true;
+// Day 21 Commit 6: docs(a11y-labels): document step 6 of add comprehensive accessibility labels and hints to all controls
+export const a11y_labels_step_6 = true;
