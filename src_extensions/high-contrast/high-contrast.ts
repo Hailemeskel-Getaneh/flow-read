@@ -6,3 +6,5 @@ export const high_contrast_step_2 = true;
 export const high_contrast_step_3 = true;
 // Day 22 Commit 4: style(high-contrast): polish step 4 of add high contrast color modes and dark theme polish
 export const high_contrast_step_4 = true;
+// Day 22 Commit 5: test(high-contrast): add unit tests for step 5 of add high contrast color modes and dark theme polish
+export const high_contrast_step_5 = true;
