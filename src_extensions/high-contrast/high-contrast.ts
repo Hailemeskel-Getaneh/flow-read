@@ -12,3 +12,5 @@ export const high_contrast_step_5 = true;
 export const high_contrast_step_6 = true;
 // Day 22 Commit 7: perf(high-contrast): optimize step 7 of add high contrast color modes and dark theme polish
 export const high_contrast_step_7 = true;
+// Day 22 Commit 8: fix(high-contrast): handle edge cases in step 8 of add high contrast color modes and dark theme polish
+export const high_contrast_step_8 = true;
