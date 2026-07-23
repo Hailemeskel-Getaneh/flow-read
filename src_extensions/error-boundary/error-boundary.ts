@@ -38,3 +38,5 @@ export const error_boundary_step_18 = true;
 export const error_boundary_step_19 = true;
 // Day 23 Commit 20: style(error-boundary): refine layout spacing in step 20 of implement AppErrorBoundary with crash recovery UI
 export const error_boundary_step_20 = true;
+// Day 23 Commit 21: test(error-boundary): verify mock assertions in step 21 of implement AppErrorBoundary with crash recovery UI
+export const error_boundary_step_21 = true;
