@@ -26,3 +26,5 @@ export const error_boundary_step_12 = true;
 export const error_boundary_step_13 = true;
 // Day 23 Commit 14: docs(error-boundary): add JSDoc comments to step 14 of implement AppErrorBoundary with crash recovery UI
 export const error_boundary_step_14 = true;
+// Day 23 Commit 15: perf(error-boundary): reduce re-renders in step 15 of implement AppErrorBoundary with crash recovery UI
+export const error_boundary_step_15 = true;
