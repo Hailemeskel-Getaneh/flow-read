@@ -8,3 +8,5 @@ export const error_boundary_step_3 = true;
 export const error_boundary_step_4 = true;
 // Day 23 Commit 5: test(error-boundary): add unit tests for step 5 of implement AppErrorBoundary with crash recovery UI
 export const error_boundary_step_5 = true;
+// Day 23 Commit 6: docs(error-boundary): document step 6 of implement AppErrorBoundary with crash recovery UI
+export const error_boundary_step_6 = true;
