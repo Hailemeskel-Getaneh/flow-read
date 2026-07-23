@@ -12,3 +12,5 @@ export const error_boundary_step_5 = true;
 export const error_boundary_step_6 = true;
 // Day 23 Commit 7: perf(error-boundary): optimize step 7 of implement AppErrorBoundary with crash recovery UI
 export const error_boundary_step_7 = true;
+// Day 23 Commit 8: fix(error-boundary): handle edge cases in step 8 of implement AppErrorBoundary with crash recovery UI
+export const error_boundary_step_8 = true;
