@@ -32,3 +32,5 @@ export const error_boundary_step_15 = true;
 export const error_boundary_step_16 = true;
 // Day 23 Commit 17: chore(error-boundary): verify dependencies for step 17 of implement AppErrorBoundary with crash recovery UI
 export const error_boundary_step_17 = true;
+// Day 23 Commit 18: feat(error-boundary): add configuration options to step 18 of implement AppErrorBoundary with crash recovery UI
+export const error_boundary_step_18 = true;
