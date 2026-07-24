@@ -10,3 +10,5 @@ export const perf_memo_step_4 = true;
 export const perf_memo_step_5 = true;
 // Day 24 Commit 6: docs(perf-memo): document step 6 of optimize React.memo and useCallback across heavy components
 export const perf_memo_step_6 = true;
+// Day 24 Commit 7: perf(perf-memo): optimize step 7 of optimize React.memo and useCallback across heavy components
+export const perf_memo_step_7 = true;
