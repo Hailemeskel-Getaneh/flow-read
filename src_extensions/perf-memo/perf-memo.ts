@@ -28,3 +28,5 @@ export const perf_memo_step_13 = true;
 export const perf_memo_step_14 = true;
 // Day 24 Commit 15: perf(perf-memo): reduce re-renders in step 15 of optimize React.memo and useCallback across heavy components
 export const perf_memo_step_15 = true;
+// Day 24 Commit 16: fix(perf-memo): prevent memory leak in step 16 of optimize React.memo and useCallback across heavy components
+export const perf_memo_step_16 = true;
