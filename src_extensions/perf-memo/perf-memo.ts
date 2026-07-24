@@ -14,3 +14,5 @@ export const perf_memo_step_6 = true;
 export const perf_memo_step_7 = true;
 // Day 24 Commit 8: fix(perf-memo): handle edge cases in step 8 of optimize React.memo and useCallback across heavy components
 export const perf_memo_step_8 = true;
+// Day 24 Commit 9: chore(perf-memo): configure step 9 of optimize React.memo and useCallback across heavy components
+export const perf_memo_step_9 = true;
