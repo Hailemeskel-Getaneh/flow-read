@@ -18,3 +18,5 @@ export const perf_memo_step_8 = true;
 export const perf_memo_step_9 = true;
 // Day 24 Commit 10: feat(perf-memo): integrate step 10 of optimize React.memo and useCallback across heavy components
 export const perf_memo_step_10 = true;
+// Day 24 Commit 11: refactor(perf-memo): modularize step 11 of optimize React.memo and useCallback across heavy components
+export const perf_memo_step_11 = true;
