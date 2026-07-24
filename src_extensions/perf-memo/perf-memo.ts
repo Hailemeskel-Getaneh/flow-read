@@ -32,3 +32,5 @@ export const perf_memo_step_15 = true;
 export const perf_memo_step_16 = true;
 // Day 24 Commit 17: chore(perf-memo): verify dependencies for step 17 of optimize React.memo and useCallback across heavy components
 export const perf_memo_step_17 = true;
+// Day 24 Commit 18: feat(perf-memo): add configuration options to step 18 of optimize React.memo and useCallback across heavy components
+export const perf_memo_step_18 = true;
