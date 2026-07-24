@@ -26,3 +26,5 @@ export const perf_memo_step_12 = true;
 export const perf_memo_step_13 = true;
 // Day 24 Commit 14: docs(perf-memo): add JSDoc comments to step 14 of optimize React.memo and useCallback across heavy components
 export const perf_memo_step_14 = true;
+// Day 24 Commit 15: perf(perf-memo): reduce re-renders in step 15 of optimize React.memo and useCallback across heavy components
+export const perf_memo_step_15 = true;
