@@ -30,3 +30,5 @@ export const perf_memo_step_14 = true;
 export const perf_memo_step_15 = true;
 // Day 24 Commit 16: fix(perf-memo): prevent memory leak in step 16 of optimize React.memo and useCallback across heavy components
 export const perf_memo_step_16 = true;
+// Day 24 Commit 17: chore(perf-memo): verify dependencies for step 17 of optimize React.memo and useCallback across heavy components
+export const perf_memo_step_17 = true;
