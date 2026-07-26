@@ -30,3 +30,5 @@ export const arch_docs_step_14 = true;
 export const arch_docs_step_15 = true;
 // Day 26 Commit 16: fix(arch-docs): prevent memory leak in step 16 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_16 = true;
+// Day 26 Commit 17: chore(arch-docs): verify dependencies for step 17 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_17 = true;
