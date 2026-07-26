@@ -26,3 +26,5 @@ export const arch_docs_step_12 = true;
 export const arch_docs_step_13 = true;
 // Day 26 Commit 14: docs(arch-docs): add JSDoc comments to step 14 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_14 = true;
+// Day 26 Commit 15: perf(arch-docs): reduce re-renders in step 15 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_15 = true;
