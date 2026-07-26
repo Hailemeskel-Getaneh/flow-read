@@ -8,3 +8,5 @@ export const arch_docs_step_3 = true;
 export const arch_docs_step_4 = true;
 // Day 26 Commit 5: test(arch-docs): add unit tests for step 5 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_5 = true;
+// Day 26 Commit 6: docs(arch-docs): document step 6 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_6 = true;
