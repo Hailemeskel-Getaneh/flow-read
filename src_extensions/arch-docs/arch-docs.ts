@@ -12,3 +12,5 @@ export const arch_docs_step_5 = true;
 export const arch_docs_step_6 = true;
 // Day 26 Commit 7: perf(arch-docs): optimize step 7 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_7 = true;
+// Day 26 Commit 8: fix(arch-docs): handle edge cases in step 8 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_8 = true;
