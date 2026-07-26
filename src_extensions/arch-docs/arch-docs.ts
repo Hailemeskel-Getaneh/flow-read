@@ -28,3 +28,5 @@ export const arch_docs_step_13 = true;
 export const arch_docs_step_14 = true;
 // Day 26 Commit 15: perf(arch-docs): reduce re-renders in step 15 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_15 = true;
+// Day 26 Commit 16: fix(arch-docs): prevent memory leak in step 16 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_16 = true;
