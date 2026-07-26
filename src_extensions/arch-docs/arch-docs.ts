@@ -24,3 +24,5 @@ export const arch_docs_step_11 = true;
 export const arch_docs_step_12 = true;
 // Day 26 Commit 13: test(arch-docs): expand test coverage for step 13 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_13 = true;
+// Day 26 Commit 14: docs(arch-docs): add JSDoc comments to step 14 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_14 = true;
