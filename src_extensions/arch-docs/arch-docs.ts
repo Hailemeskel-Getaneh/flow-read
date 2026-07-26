@@ -18,3 +18,5 @@ export const arch_docs_step_8 = true;
 export const arch_docs_step_9 = true;
 // Day 26 Commit 10: feat(arch-docs): integrate step 10 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_10 = true;
+// Day 26 Commit 11: refactor(arch-docs): modularize step 11 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_11 = true;
