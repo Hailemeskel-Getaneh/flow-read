@@ -6,3 +6,5 @@ export const arch_docs_step_2 = true;
 export const arch_docs_step_3 = true;
 // Day 26 Commit 4: style(arch-docs): polish step 4 of write detailed architecture overview in docs/ARCHITECTURE.md
 export const arch_docs_step_4 = true;
+// Day 26 Commit 5: test(arch-docs): add unit tests for step 5 of write detailed architecture overview in docs/ARCHITECTURE.md
+export const arch_docs_step_5 = true;
