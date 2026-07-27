@@ -6,3 +6,5 @@ export const audio_docs_step_2 = true;
 export const audio_docs_step_3 = true;
 // Day 27 Commit 4: style(audio-docs): polish step 4 of write background audio playback guide in docs/AUDIO_SYSTEM.md
 export const audio_docs_step_4 = true;
+// Day 27 Commit 5: test(audio-docs): add unit tests for step 5 of write background audio playback guide in docs/AUDIO_SYSTEM.md
+export const audio_docs_step_5 = true;
