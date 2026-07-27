@@ -36,3 +36,5 @@ export const audio_docs_step_17 = true;
 export const audio_docs_step_18 = true;
 // Day 27 Commit 19: refactor(audio-docs): extract reusable helpers in step 19 of write background audio playback guide in docs/AUDIO_SYSTEM.md
 export const audio_docs_step_19 = true;
+// Day 27 Commit 20: style(audio-docs): refine layout spacing in step 20 of write background audio playback guide in docs/AUDIO_SYSTEM.md
+export const audio_docs_step_20 = true;
