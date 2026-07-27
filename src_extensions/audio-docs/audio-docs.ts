@@ -24,3 +24,5 @@ export const audio_docs_step_11 = true;
 export const audio_docs_step_12 = true;
 // Day 27 Commit 13: test(audio-docs): expand test coverage for step 13 of write background audio playback guide in docs/AUDIO_SYSTEM.md
 export const audio_docs_step_13 = true;
+// Day 27 Commit 14: docs(audio-docs): add JSDoc comments to step 14 of write background audio playback guide in docs/AUDIO_SYSTEM.md
+export const audio_docs_step_14 = true;
