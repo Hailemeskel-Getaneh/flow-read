@@ -32,3 +32,5 @@ export const audio_docs_step_15 = true;
 export const audio_docs_step_16 = true;
 // Day 27 Commit 17: chore(audio-docs): verify dependencies for step 17 of write background audio playback guide in docs/AUDIO_SYSTEM.md
 export const audio_docs_step_17 = true;
+// Day 27 Commit 18: feat(audio-docs): add configuration options to step 18 of write background audio playback guide in docs/AUDIO_SYSTEM.md
+export const audio_docs_step_18 = true;
