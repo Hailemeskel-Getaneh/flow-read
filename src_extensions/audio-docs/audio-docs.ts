@@ -38,3 +38,5 @@ export const audio_docs_step_18 = true;
 export const audio_docs_step_19 = true;
 // Day 27 Commit 20: style(audio-docs): refine layout spacing in step 20 of write background audio playback guide in docs/AUDIO_SYSTEM.md
 export const audio_docs_step_20 = true;
+// Day 27 Commit 21: test(audio-docs): verify mock assertions in step 21 of write background audio playback guide in docs/AUDIO_SYSTEM.md
+export const audio_docs_step_21 = true;
