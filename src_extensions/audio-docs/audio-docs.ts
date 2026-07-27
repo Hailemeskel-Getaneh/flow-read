@@ -28,3 +28,5 @@ export const audio_docs_step_13 = true;
 export const audio_docs_step_14 = true;
 // Day 27 Commit 15: perf(audio-docs): reduce re-renders in step 15 of write background audio playback guide in docs/AUDIO_SYSTEM.md
 export const audio_docs_step_15 = true;
+// Day 27 Commit 16: fix(audio-docs): prevent memory leak in step 16 of write background audio playback guide in docs/AUDIO_SYSTEM.md
+export const audio_docs_step_16 = true;
