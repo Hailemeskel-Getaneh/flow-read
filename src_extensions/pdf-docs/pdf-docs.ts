@@ -24,3 +24,5 @@ export const pdf_docs_step_11 = true;
 export const pdf_docs_step_12 = true;
 // Day 28 Commit 13: test(pdf-docs): expand test coverage for step 13 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_13 = true;
+// Day 28 Commit 14: docs(pdf-docs): add JSDoc comments to step 14 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_14 = true;
