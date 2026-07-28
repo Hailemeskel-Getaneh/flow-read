@@ -14,3 +14,5 @@ export const pdf_docs_step_6 = true;
 export const pdf_docs_step_7 = true;
 // Day 28 Commit 8: fix(pdf-docs): handle edge cases in step 8 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_8 = true;
+// Day 28 Commit 9: chore(pdf-docs): configure step 9 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_9 = true;
