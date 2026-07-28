@@ -2,3 +2,5 @@
 export const pdf_docs_step_1 = true;
 // Day 28 Commit 2: feat(pdf-docs): scaffold step 2 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_2 = true;
+// Day 28 Commit 3: refactor(pdf-docs): streamline step 3 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_3 = true;
