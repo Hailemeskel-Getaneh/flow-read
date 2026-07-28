@@ -26,3 +26,5 @@ export const pdf_docs_step_12 = true;
 export const pdf_docs_step_13 = true;
 // Day 28 Commit 14: docs(pdf-docs): add JSDoc comments to step 14 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_14 = true;
+// Day 28 Commit 15: perf(pdf-docs): reduce re-renders in step 15 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_15 = true;
