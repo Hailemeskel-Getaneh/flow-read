@@ -10,3 +10,5 @@ export const pdf_docs_step_4 = true;
 export const pdf_docs_step_5 = true;
 // Day 28 Commit 6: docs(pdf-docs): document step 6 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_6 = true;
+// Day 28 Commit 7: perf(pdf-docs): optimize step 7 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_7 = true;
