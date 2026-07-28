@@ -8,3 +8,5 @@ export const pdf_docs_step_3 = true;
 export const pdf_docs_step_4 = true;
 // Day 28 Commit 5: test(pdf-docs): add unit tests for step 5 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_5 = true;
+// Day 28 Commit 6: docs(pdf-docs): document step 6 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_6 = true;
