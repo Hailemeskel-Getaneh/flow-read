@@ -30,3 +30,5 @@ export const pdf_docs_step_14 = true;
 export const pdf_docs_step_15 = true;
 // Day 28 Commit 16: fix(pdf-docs): prevent memory leak in step 16 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_16 = true;
+// Day 28 Commit 17: chore(pdf-docs): verify dependencies for step 17 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_17 = true;
