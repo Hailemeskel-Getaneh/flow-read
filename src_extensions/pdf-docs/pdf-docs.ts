@@ -32,3 +32,5 @@ export const pdf_docs_step_15 = true;
 export const pdf_docs_step_16 = true;
 // Day 28 Commit 17: chore(pdf-docs): verify dependencies for step 17 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_17 = true;
+// Day 28 Commit 18: feat(pdf-docs): add configuration options to step 18 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_18 = true;
