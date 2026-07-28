@@ -18,3 +18,5 @@ export const pdf_docs_step_8 = true;
 export const pdf_docs_step_9 = true;
 // Day 28 Commit 10: feat(pdf-docs): integrate step 10 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
 export const pdf_docs_step_10 = true;
+// Day 28 Commit 11: refactor(pdf-docs): modularize step 11 of write PDF rendering native module guide in docs/PDF_INTEGRATION.md
+export const pdf_docs_step_11 = true;
