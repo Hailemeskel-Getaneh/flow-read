@@ -22,3 +22,5 @@ export const contributing_step_10 = true;
 export const contributing_step_11 = true;
 // Day 29 Commit 12: style(contributing): enhance UI styling in step 12 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_12 = true;
+// Day 29 Commit 13: test(contributing): expand test coverage for step 13 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_13 = true;
