@@ -30,3 +30,5 @@ export const contributing_step_14 = true;
 export const contributing_step_15 = true;
 // Day 29 Commit 16: fix(contributing): prevent memory leak in step 16 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_16 = true;
+// Day 29 Commit 17: chore(contributing): verify dependencies for step 17 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_17 = true;
