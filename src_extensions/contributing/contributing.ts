@@ -8,3 +8,5 @@ export const contributing_step_3 = true;
 export const contributing_step_4 = true;
 // Day 29 Commit 5: test(contributing): add unit tests for step 5 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_5 = true;
+// Day 29 Commit 6: docs(contributing): document step 6 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_6 = true;
