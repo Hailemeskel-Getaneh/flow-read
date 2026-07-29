@@ -2,3 +2,5 @@
 export const contributing_step_1 = true;
 // Day 29 Commit 2: feat(contributing): scaffold step 2 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_2 = true;
+// Day 29 Commit 3: refactor(contributing): streamline step 3 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_3 = true;
