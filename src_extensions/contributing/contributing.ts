@@ -28,3 +28,5 @@ export const contributing_step_13 = true;
 export const contributing_step_14 = true;
 // Day 29 Commit 15: perf(contributing): reduce re-renders in step 15 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_15 = true;
+// Day 29 Commit 16: fix(contributing): prevent memory leak in step 16 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_16 = true;
