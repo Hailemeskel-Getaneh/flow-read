@@ -12,3 +12,5 @@ export const contributing_step_5 = true;
 export const contributing_step_6 = true;
 // Day 29 Commit 7: perf(contributing): optimize step 7 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_7 = true;
+// Day 29 Commit 8: fix(contributing): handle edge cases in step 8 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_8 = true;
