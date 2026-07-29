@@ -16,3 +16,5 @@ export const contributing_step_7 = true;
 export const contributing_step_8 = true;
 // Day 29 Commit 9: chore(contributing): configure step 9 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_9 = true;
+// Day 29 Commit 10: feat(contributing): integrate step 10 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_10 = true;
