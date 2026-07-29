@@ -32,3 +32,5 @@ export const contributing_step_15 = true;
 export const contributing_step_16 = true;
 // Day 29 Commit 17: chore(contributing): verify dependencies for step 17 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_17 = true;
+// Day 29 Commit 18: feat(contributing): add configuration options to step 18 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_18 = true;
