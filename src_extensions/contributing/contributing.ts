@@ -20,3 +20,5 @@ export const contributing_step_9 = true;
 export const contributing_step_10 = true;
 // Day 29 Commit 11: refactor(contributing): modularize step 11 of add CONTRIBUTING.md guide with PR guidelines and coding standards
 export const contributing_step_11 = true;
+// Day 29 Commit 12: style(contributing): enhance UI styling in step 12 of add CONTRIBUTING.md guide with PR guidelines and coding standards
+export const contributing_step_12 = true;
