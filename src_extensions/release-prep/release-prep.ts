@@ -8,3 +8,5 @@ export const release_prep_step_3 = true;
 export const release_prep_step_4 = true;
 // Day 31 Commit 5: test(release-prep): add unit tests for step 5 of finalize v1.1.0 release notes, scripts, and production build checks
 export const release_prep_step_5 = true;
+// Day 31 Commit 6: docs(release-prep): document step 6 of finalize v1.1.0 release notes, scripts, and production build checks
+export const release_prep_step_6 = true;
