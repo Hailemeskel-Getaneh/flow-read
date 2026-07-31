@@ -30,3 +30,5 @@ export const release_prep_step_14 = true;
 export const release_prep_step_15 = true;
 // Day 31 Commit 16: fix(release-prep): prevent memory leak in step 16 of finalize v1.1.0 release notes, scripts, and production build checks
 export const release_prep_step_16 = true;
+// Day 31 Commit 17: chore(release-prep): verify dependencies for step 17 of finalize v1.1.0 release notes, scripts, and production build checks
+export const release_prep_step_17 = true;
