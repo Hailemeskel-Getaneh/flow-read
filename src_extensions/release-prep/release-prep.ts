@@ -32,3 +32,5 @@ export const release_prep_step_15 = true;
 export const release_prep_step_16 = true;
 // Day 31 Commit 17: chore(release-prep): verify dependencies for step 17 of finalize v1.1.0 release notes, scripts, and production build checks
 export const release_prep_step_17 = true;
+// Day 31 Commit 18: feat(release-prep): add configuration options to step 18 of finalize v1.1.0 release notes, scripts, and production build checks
+export const release_prep_step_18 = true;
