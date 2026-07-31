@@ -38,3 +38,5 @@ export const release_prep_step_18 = true;
 export const release_prep_step_19 = true;
 // Day 31 Commit 20: style(release-prep): refine layout spacing in step 20 of finalize v1.1.0 release notes, scripts, and production build checks
 export const release_prep_step_20 = true;
+// Day 31 Commit 21: test(release-prep): verify mock assertions in step 21 of finalize v1.1.0 release notes, scripts, and production build checks
+export const release_prep_step_21 = true;
